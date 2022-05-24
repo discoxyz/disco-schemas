@@ -26,6 +26,9 @@ module.exports = {
   ],
   // A map from regular expressions to paths to transformers
   transform: {
-    '\\.(ts)$': 'ts-jest'
+    '\\.ts$': 'ts-jest',
+    '\\.js$': 'babel-jest',
   },
+
+  transformIgnorePatterns: ['node_modules/(?!@sindresorhus|escape-string-regexp)'],
 }

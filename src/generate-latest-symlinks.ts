@@ -1,4 +1,4 @@
-/** Loop through all schema folders and ensure there is a symlink `latest.ts` pointing to the latest version. This is so that this module can export and host the latest version of each schema. */
+/** Loop through all schema folders and ensure there is a symlink `latest.ts` pointing to the latest version. This is so that the latest version of each schema can be exported by this module and hosted at a consistent URL. */
 
 import fs from "fs";
 
