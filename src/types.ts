@@ -21,4 +21,3 @@ export interface VC {
     type: string;
   };
 }
-
