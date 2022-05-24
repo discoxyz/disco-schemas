@@ -1,9 +1,10 @@
 import { JSONSchema7 } from "json-schema";
 
+import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import KudosCredential from "./KudosCredential/latest";
 import ProfileCredential from "./ProfileCredential/latest";
 
-export { KudosCredential, ProfileCredential };
+export { BaseVerifiableCredential, KudosCredential, ProfileCredential };
 
 export const issuableSchemas: JSONSchema7[] = [
   KudosCredential,

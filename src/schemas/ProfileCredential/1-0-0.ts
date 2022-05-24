@@ -1,8 +1,8 @@
 import { JSONSchema7 } from "json-schema";
-import { baseVcJsonSchema } from "../../helpers";
+import BaseVerifiableCredential from "../BaseVerifiableCredential/latest";
 
 export default {
-  ...baseVcJsonSchema,
+  ...BaseVerifiableCredential,
 
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
@@ -11,7 +11,7 @@ export default {
   description: "@TODO",
 
   properties: {
-    ...baseVcJsonSchema.properties,
+    ...BaseVerifiableCredential.properties,
 
     credentialSubject: {
       type: "object",
@@ -19,7 +19,7 @@ export default {
         name: { title: "Name", type: "string" },
         bio: { title: "Bio", type: "string", maxLength: 200 },
         avatar: { title: "Avatar URL", type: "string", format: "uri" },
-        banner: { title: "Banner URL", type: "string", format: "uri" }
+        banner: { title: "Banner URL", type: "string", format: "uri" },
       },
     },
   },
