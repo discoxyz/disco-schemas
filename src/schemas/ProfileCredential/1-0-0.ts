@@ -1,5 +1,5 @@
 import { JSONSchema7 } from "json-schema";
-import BaseVerifiableCredential from "../BaseVerifiableCredential/latest";
+import BaseVerifiableCredential from "../BaseVerifiableCredential/1-0-0";
 
 export default {
   ...BaseVerifiableCredential,
@@ -8,7 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
 
   title: "Profile Credential",
-  description: "@TODO",
+  description: "Credential containing profile information",
 
   properties: {
     ...BaseVerifiableCredential.properties,

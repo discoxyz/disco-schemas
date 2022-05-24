@@ -2,23 +2,9 @@ import "jest";
 import fetchMock from "jest-fetch-mock";
 import { getAndValidateSchemaFromVc, validateVcAgainstSchema } from "./validateVc";
 import { AccountLinkageCredential } from "./schemas";
-import { VC } from "./types";
+import { EXAMPLE_VC } from "./helpers";
 
-const vc: VC = {
-  "@context": ["https://www.w3.org/2018/credentials/v1"],
-  type: ["VerifiableCredential", "AccountLinkageCredential"],
-  issuer: { id: "did:ethr:0x02f4b0ceed160cccb47a66951baffac8a8ace75c33b761beb545e3ec99f44300fd" },
-  issuanceDate: "2022-04-13T11:32:41.000Z",
-  credentialSubject: {
-    id: "did:ethr:0x02f4b0ceed160cccb47a66951baffac8a8ace75c33b761beb545e3ec99f44300fc",
-    type: "Twitter",
-    username: "example_username",
-  },
-  credentialSchema: {
-    id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
-    type: "JsonSchemaValidator2018",
-  },
-};
+const vc = EXAMPLE_VC;
 
 beforeEach(() => {
   fetchMock.enableMocks();

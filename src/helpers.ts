@@ -8,7 +8,8 @@ export function convertToPascalCase(s: string): string {
   return slugify(s).replace(/(^|-)./g, (x) => x.replace("-", "").toUpperCase());
 }
 
-// @TODO support validation here
+// @TODO Optionally support validating by the given schema here?
+/** Automatically add the `credentialSchema` field to the given VC and, optionally, append schema name to `type`. */
 export function addSchemaToVc(schema: JSONSchema7, vc: VC, includeType?: boolean): VC {
   if (!schema.$id) {
     throw Error("Schema missing $id property: can't use for VC credentialSchema field");
@@ -45,4 +46,20 @@ export const getNewAjv = (): Ajv => {
   ajv.addKeyword("$metadata");
   addFormats(ajv);
   return ajv;
+};
+
+export const EXAMPLE_VC: VC = {
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  type: ["VerifiableCredential", "AccountLinkageCredential"],
+  issuer: { id: "did:ethr:0x02f4b0ceed160cccb47a66951baffac8a8ace75c33b761beb545e3ec99f44300fd" },
+  issuanceDate: "2022-04-13T11:32:41.000Z",
+  credentialSubject: {
+    id: "did:ethr:0x02f4b0ceed160cccb47a66951baffac8a8ace75c33b761beb545e3ec99f44300fc",
+    type: "Twitter",
+    username: "example_username",
+  },
+  credentialSchema: {
+    id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
+    type: "JsonSchemaValidator2018",
+  },
 };

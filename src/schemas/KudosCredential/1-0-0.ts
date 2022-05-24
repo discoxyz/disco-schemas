@@ -1,5 +1,5 @@
 import { JSONSchema7 } from "json-schema";
-import BaseVerifiableCredential from "../BaseVerifiableCredential/latest";
+import BaseVerifiableCredential from "../BaseVerifiableCredential/1-0-0";
 
 export default {
   ...BaseVerifiableCredential,
@@ -8,7 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/KudosCredential/1-0-0.json",
 
   title: "Kudos Credential",
-  description: "@TODO",
+  description: "Credential offering kudos to the recipient",
 
   properties: {
     ...BaseVerifiableCredential.properties,
