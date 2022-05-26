@@ -16,6 +16,7 @@ export default {
     credentialSubject: {
       type: "object",
       properties: {
+        id: { title: "DID", type: "string", format: "uri" },
         name: { title: "Name", type: "string" },
         bio: { title: "Bio", type: "string", maxLength: 200 },
         avatar: { title: "Avatar URL", type: "string", format: "uri" },

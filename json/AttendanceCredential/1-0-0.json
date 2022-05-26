@@ -1,7 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AttendanceCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential containing profile information",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,31 +33,29 @@
     },
     "credentialSubject": {
       "properties": {
-        "avatar": {
-          "format": "uri",
-          "title": "Avatar URL",
+        "eventDate": {
+          "format": "date",
+          "title": "Event Date",
           "type": "string"
         },
-        "banner": {
-          "format": "uri",
-          "title": "Banner URL",
+        "eventDescription": {
+          "title": "Event Description",
           "type": "string"
         },
-        "bio": {
-          "maxLength": 200,
-          "title": "Bio",
+        "eventName": {
+          "title": "Event Name",
           "type": "string"
         },
         "id": {
           "format": "uri",
-          "title": "DID",
-          "type": "string"
-        },
-        "name": {
-          "title": "Name",
+          "title": "Member DID",
           "type": "string"
         }
       },
+      "required": [
+        "id",
+        "eventName"
+      ],
       "type": "object"
     },
     "expirationDate": {
@@ -114,6 +111,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Profile Credential",
+  "title": "Attendance Credential",
   "type": "object"
 }

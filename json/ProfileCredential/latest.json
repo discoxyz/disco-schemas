@@ -49,6 +49,11 @@
           "title": "Bio",
           "type": "string"
         },
+        "id": {
+          "format": "uri",
+          "title": "DID",
+          "type": "string"
+        },
         "name": {
           "title": "Name",
           "type": "string"

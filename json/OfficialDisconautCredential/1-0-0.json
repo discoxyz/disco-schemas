@@ -1,7 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OfficialDisconautCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential containing profile information",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,31 +33,15 @@
     },
     "credentialSubject": {
       "properties": {
-        "avatar": {
-          "format": "uri",
-          "title": "Avatar URL",
-          "type": "string"
-        },
-        "banner": {
-          "format": "uri",
-          "title": "Banner URL",
-          "type": "string"
-        },
-        "bio": {
-          "maxLength": 200,
-          "title": "Bio",
-          "type": "string"
-        },
         "id": {
           "format": "uri",
-          "title": "DID",
-          "type": "string"
-        },
-        "name": {
-          "title": "Name",
+          "title": "Disconaut DID",
           "type": "string"
         }
       },
+      "required": [
+        "id"
+      ],
       "type": "object"
     },
     "expirationDate": {
@@ -114,6 +97,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Profile Credential",
+  "title": "Official Disconaut Credential",
   "type": "object"
 }
