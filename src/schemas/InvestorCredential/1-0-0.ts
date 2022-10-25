@@ -10,7 +10,6 @@ export default {
   title: "Investor Credential",
   description: "Credential to be issued to all Disco investors",
 
-
   properties: {
     ...BaseVerifiableCredential.properties,
 
