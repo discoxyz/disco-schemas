@@ -23,7 +23,13 @@ export {
   AttendanceCredential,
   BetaUserCredential,
   InvestorCredential,
-  OrganizationCredential
+  OrganizationCredential,
 };
 
-export const issuableSchemas: JSONSchema7[] = [GMCredential, MembershipCredential, BetaUserCredential, InvestorCredential, OrganizationCredential];
+export const issuableSchemas: JSONSchema7[] = [
+  GMCredential,
+  MembershipCredential,
+  BetaUserCredential,
+  InvestorCredential,
+  OrganizationCredential,
+];

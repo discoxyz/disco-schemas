@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/BetaUserCredential/1-0-0.json",
 
   title: "Beta User Credential",
-  description: "This credential is for our early beta users or testers who are testing our product before official launch. Thank you for your support and coninued patience!",
+  description:
+    "This credential is for our early beta users or testers who are testing our product before official launch. Thank you for your support and coninued patience!",
 
   properties: {
     ...BaseVerifiableCredential.properties,
@@ -17,8 +18,8 @@ export default {
       type: "object",
       required: ["id"],
       properties: {
-        id: { title: "Recipient DID", type: "string", format: "uri" },
-        name: { title: "Name", type: "string", format: "uri" },
+        id: { title: "Recipient DID", type: "string" },
+        name: { title: "Name", type: "string" },
       },
     },
   },

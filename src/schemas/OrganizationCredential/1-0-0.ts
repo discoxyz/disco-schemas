@@ -25,4 +25,3 @@ export default {
     },
   },
 } as JSONSchema7;
-
