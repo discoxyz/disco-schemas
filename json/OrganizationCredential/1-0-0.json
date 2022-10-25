@@ -1,0 +1,120 @@
+{
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "expiration": {
+          "format": "date",
+          "title": "Expiration",
+          "type": "string"
+        },
+        "id": {
+          "format": "uri",
+          "title": "Organization DID",
+          "type": "string"
+        },
+        "organizationDescription": {
+          "title": "Description",
+          "type": "string"
+        },
+        "organizationName": {
+          "title": "Organization Name",
+          "type": "string"
+        },
+        "organizationType": {
+          "title": "Organization Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "organizationName"
+      ],
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "title": "Organization Credential",
+  "type": "object"
+}
