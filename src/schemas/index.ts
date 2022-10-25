@@ -8,6 +8,7 @@ import GMCredential from "./GMCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import MembershipCredential from "./MembershipCredential/latest";
 import AttendanceCredential from "./AttendanceCredential/latest";
+import BetaUserCredential from "./BetaUserCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 
 export {
@@ -19,7 +20,8 @@ export {
   OfficialDisconautCredential,
   MembershipCredential,
   AttendanceCredential,
+  BetaUserCredential,
   InvestorCredential
 };
 
-export const issuableSchemas: JSONSchema7[] = [GMCredential, MembershipCredential, InvestorCredential];
+export const issuableSchemas: JSONSchema7[] = [GMCredential, MembershipCredential, BetaUserCredential, InvestorCredential];
