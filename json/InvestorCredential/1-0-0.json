@@ -61,7 +61,7 @@
           "type": "string"
         },
         "round": {
-          "title": "round",
+          "title": "Round",
           "type": "string"
         }
       },
