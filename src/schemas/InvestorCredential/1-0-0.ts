@@ -15,12 +15,9 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "name", "email", "fund", "round"],
+      required: ["id", "round"],
       properties: {
         id: { title: "Member DID", type: "string", format: "uri" },
-        name: { title: "Name", type: "string" },
-        email: { title: "Email", type: "string" },
-        fund: { title: "Fund Name", type: "string" },
         round: { title: "Round", type: "string" },
         description: { title: "Description and Notes", type: "string" },
         expiration: { title: "Expiration", type: "string", format: "date" },
