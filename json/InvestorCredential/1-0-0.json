@@ -38,26 +38,14 @@
           "title": "Description and Notes",
           "type": "string"
         },
-        "email": {
-          "title": "Email",
-          "type": "string"
-        },
         "expiration": {
           "format": "date",
           "title": "Expiration",
           "type": "string"
         },
-        "fund": {
-          "title": "Fund Name",
-          "type": "string"
-        },
         "id": {
           "format": "uri",
           "title": "Member DID",
-          "type": "string"
-        },
-        "name": {
-          "title": "Name",
           "type": "string"
         },
         "round": {
@@ -67,9 +55,6 @@
       },
       "required": [
         "id",
-        "name",
-        "email",
-        "fund",
         "round"
       ],
       "type": "object"

@@ -35,12 +35,10 @@
     "credentialSubject": {
       "properties": {
         "id": {
-          "format": "uri",
           "title": "Recipient DID",
           "type": "string"
         },
         "name": {
-          "format": "uri",
           "title": "Name",
           "type": "string"
         }
