@@ -1,6 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OGTwitterVerificationCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/DarkModePrefCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "This credential is a self-attested credential to indicate whether you have a preference for dark/light mode.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -37,29 +38,22 @@
           "title": "Recipient DID",
           "type": "string"
         },
-        "snapshotDate": {
-          "format": "date",
-          "title": "Snapshot Date",
-          "type": "string"
-        },
-        "snapshotURI": {
-          "format": "uri",
-          "title": "Snapshot URI",
-          "type": "string"
-        },
-        "twitterHandle": {
-          "title": "Twitter Handle",
-          "type": "string"
-        },
-        "twitterId": {
-          "title": "Twitter ID",
+        "preference": {
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "enumNames": [
+            "Light",
+            "Dark"
+          ],
+          "title": "Preference",
           "type": "string"
         }
       },
       "required": [
         "id",
-        "twitterId",
-        "twitterHandle"
+        "preference"
       ],
       "type": "object"
     },
@@ -116,6 +110,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "OG Twitter Verification Credential",
+  "title": "Dark Mode Preference Credential",
   "type": "object"
 }
