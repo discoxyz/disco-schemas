@@ -40,10 +40,6 @@
         },
         "preference": {
           "enum": [
-            "No",
-            "Yes"
-          ],
-          "enumNames": [
             "Light",
             "Dark"
           ],

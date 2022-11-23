@@ -23,10 +23,6 @@ export default {
           type: "string",
           title: "Preference",
           enum: [
-            "No",
-            "Yes"
-          ],
-          enumNames: [
             "Light",
             "Dark"
           ]
