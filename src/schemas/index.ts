@@ -12,12 +12,14 @@ import AttendanceCredential from "./AttendanceCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
+import PronounsCredential from "./PronounsCredential/latest";
 
 export {
   BaseVerifiableCredential,
   AccountLinkageCredential,
   KudosCredential,
   ProfileCredential,
+  PronounsCredential,
   GMCredential,
   OfficialDisconautCredential,
   MembershipCredential,
