@@ -8,7 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SnapsCredential/1-0-0.json",
 
   title: "Snaps Credential",
-  description: "Credential containing profile information",
+  description: "Send snaps to celebrate a friend or colleague doing something positive and helpful.",
 
   properties: {
     ...BaseVerifiableCredential.properties,
