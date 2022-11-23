@@ -12,6 +12,7 @@ import AttendanceCredential from "./AttendanceCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
+import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import PronounsCredential from "./PronounsCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
@@ -30,6 +31,7 @@ export {
   InvestorCredential,
   OrganizationCredential,
   OGTwitterVerificationCredential,
+  TshirtSizeCredential
   PronounsCredential,
   SnapsCredential,
   DarkModePrefCredential
