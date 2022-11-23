@@ -1,42 +1,41 @@
 import { JSONSchema7 } from "json-schema";
 
-import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import AccountLinkageCredential from "./AccountLinkageCredential/latest";
-import KudosCredential from "./KudosCredential/latest";
-import ProfileCredential from "./ProfileCredential/latest";
-import GMCredential from "./GMCredential/latest";
-import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
-import OrganizationCredential from "./OrganizationCredential/latest";
-import MembershipCredential from "./MembershipCredential/latest";
 import AttendanceCredential from "./AttendanceCredential/latest";
+import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
+import DarkModePrefCredential from "./DarkModePrefCredential/latest";
+import GMCredential from "./GMCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
+import KudosCredential from "./KudosCredential/latest";
+import MembershipCredential from "./MembershipCredential/latest";
+import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
+import OrganizationCredential from "./OrganizationCredential/latest";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
-import TshirtSizeCredential from "./TshirtSizeCredential/latest";
+import ProfileCredential from "./ProfileCredential/latest";
 import PronounsCredential from "./PronounsCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
-import DarkModePrefCredential from "./DarkModePrefCredential/latest";
+import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 
 export {
-  BaseVerifiableCredential,
   AccountLinkageCredential,
+  AttendanceCredential,
+  BaseVerifiableCredential,
+  BetaUserCredential,
+  DarkModePrefCredential,
+  GMCredential,
+  InvestorCredential,
   KudosCredential,
+  MembershipCredential,
+  OfficialDisconautCredential,
+  OGTwitterVerificationCredential,
+  OrganizationCredential,
+  PrimaryLanguageCredential,
   ProfileCredential,
   PronounsCredential,
-  GMCredential,
-  OfficialDisconautCredential,
-  MembershipCredential,
-  AttendanceCredential,
-  BetaUserCredential,
-  InvestorCredential,
-  OrganizationCredential,
-  OGTwitterVerificationCredential,
-  PrimaryLanguageCredential
-  TshirtSizeCredential
-  PronounsCredential,
   SnapsCredential,
-  DarkModePrefCredential
+  TshirtSizeCredential,
 };
 
 export const issuableSchemas: JSONSchema7[] = [
