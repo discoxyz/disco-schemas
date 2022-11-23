@@ -13,6 +13,7 @@ import BetaUserCredential from "./BetaUserCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
+import DarkModePrefCredential from "./DarkModePrefCredential/latest";
 
 export {
   BaseVerifiableCredential,
@@ -27,7 +28,8 @@ export {
   InvestorCredential,
   OrganizationCredential,
   OGTwitterVerificationCredential,
-  SnapsCredential
+  SnapsCredential,
+  DarkModePrefCredential
 };
 
 export const issuableSchemas: JSONSchema7[] = [
