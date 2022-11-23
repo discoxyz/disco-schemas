@@ -12,6 +12,8 @@ import AttendanceCredential from "./AttendanceCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
+import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
+
 
 export {
   BaseVerifiableCredential,
@@ -25,7 +27,8 @@ export {
   BetaUserCredential,
   InvestorCredential,
   OrganizationCredential,
-  OGTwitterVerificationCredential
+  OGTwitterVerificationCredential,
+  PrimaryLanguageCredential
 };
 
 export const issuableSchemas: JSONSchema7[] = [
