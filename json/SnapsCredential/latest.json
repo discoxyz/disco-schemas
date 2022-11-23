@@ -1,6 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OGTwitterVerificationCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SnapsCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Credential containing profile information",
   "properties": {
     "@context": {
       "anyOf": [
@@ -37,29 +38,19 @@
           "title": "Recipient DID",
           "type": "string"
         },
-        "snapshotDate": {
-          "format": "date",
-          "title": "Snapshot Date",
-          "type": "string"
-        },
-        "snapshotURI": {
-          "format": "uri",
-          "title": "Snapshot URI",
-          "type": "string"
-        },
-        "twitterHandle": {
-          "title": "Twitter Handle",
-          "type": "string"
-        },
-        "twitterId": {
-          "title": "Twitter ID",
+        "snapsType": {
+          "enum": [
+            "Immaculate Vibes: Thank you for your awesome energy",
+            "Problem Solver: Thank you for working with me to solve a tough challenge together",
+            "Miracle Worker: Thank you for unexpectedly and proactively doing something awesome that impacted my day for the better!"
+          ],
+          "title": "Snaps Type",
           "type": "string"
         }
       },
       "required": [
         "id",
-        "twitterId",
-        "twitterHandle"
+        "snapsType"
       ],
       "type": "object"
     },
@@ -116,6 +107,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "OG Twitter Verification Credential",
+  "title": "Snaps Credential",
   "type": "object"
 }
