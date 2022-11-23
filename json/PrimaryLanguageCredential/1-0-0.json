@@ -1,0 +1,232 @@
+{
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/PrimaryLanguageCredential/1-0-0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Self-attested credential to your preferred primary language",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "id": {
+          "title": "Recipient DID",
+          "type": "string"
+        },
+        "language": {
+          "enum": [
+            "Afrikaans",
+            "Albanian",
+            "Aragonese",
+            "Arabic",
+            "Armenian",
+            "Assamese",
+            "Asturian",
+            "Azerbaijani",
+            "Basque",
+            "Bulgarian",
+            "Belarusian",
+            "Bengali",
+            "Bosnian",
+            "Breton",
+            "Bulgarian",
+            "Burmese",
+            "Catalan",
+            "Chamorro",
+            "Chechen",
+            "Chinese",
+            "Chinese (Cantonese)",
+            "Chinese (Mandarin)",
+            "Chuvash",
+            "Corsican",
+            "Cree",
+            "Croatian",
+            "Czech",
+            "Danish",
+            "English",
+            "Esperanto",
+            "Estonian",
+            "Faeroese",
+            "Farsi",
+            "Fijian",
+            "Finnish",
+            "French",
+            "Frisian",
+            "Friulian",
+            "Gaelic",
+            "Galacian",
+            "Georgian",
+            "German",
+            "Greek",
+            "Gujurati",
+            "Haitian",
+            "Hebrew",
+            "Hindi",
+            "Hungarian",
+            "Icelandic",
+            "Indonesian",
+            "Inuktitut",
+            "Irish",
+            "Italian",
+            "Japanese",
+            "Kannada",
+            "Kashmiri",
+            "Kazakh",
+            "Khmer",
+            "Kirghiz",
+            "Klingon",
+            "Korean",
+            "Latin",
+            "Latvian",
+            "Lithuanian",
+            "Luxembourgish",
+            "FYRO Macedonian",
+            "Malay",
+            "Malayalam",
+            "Maltese",
+            "Maori",
+            "Marathi",
+            "Moldavian",
+            "Navajo",
+            "Ndonga",
+            "Nepali",
+            "Norwegian",
+            "Occitan",
+            "Oriya",
+            "Oromo",
+            "Persian",
+            "Polish",
+            "Portuguese",
+            "Punjabi",
+            "Quechua",
+            "Rhaeto-Romanic",
+            "Romanian",
+            "Russian",
+            "Sami (Lappish)",
+            "Sango",
+            "Sanskrit",
+            "Sardinian",
+            "Scots Gaelic",
+            "Sindhi",
+            "Singhalese",
+            "Serbian",
+            "Slovak",
+            "Slovenian",
+            "Somani",
+            "Sorbian",
+            "Spanish",
+            "Sutu",
+            "Swahili",
+            "Swedish",
+            "Tamil",
+            "Tatar",
+            "Teluga",
+            "Thai",
+            "Tigre",
+            "Tsonga",
+            "Tswana",
+            "Turkish",
+            "Turkmen",
+            "Ukrainian",
+            "Upper Sorbian",
+            "Urdu",
+            "Venda",
+            "Vietnamese",
+            "Volapuk",
+            "Walloon",
+            "Welsh",
+            "Xhosa",
+            "Yiddish",
+            "Zulu"
+          ],
+          "title": "Language",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "language"
+      ],
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "title": "Primary Language Preference Credential",
+  "type": "object"
+}
