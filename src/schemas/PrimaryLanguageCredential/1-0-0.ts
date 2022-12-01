@@ -31,7 +31,6 @@ export default {
             "Asturian",
             "Azerbaijani",
             "Basque",
-            "Bulgarian",
             "Belarusian",
             "Bengali",
             "Bosnian",
