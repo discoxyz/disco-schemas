@@ -1,0 +1,102 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+orbs:
+  # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
+  # Orbs reduce the amount of configuration required for common tasks.
+  # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
+
+  node: circleci/node@5.0.2
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:16.13
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore yarn cache
+          key: node-modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install modules
+          command: yarn --frozen-lockfile install
+      - save_cache:
+          name: Save yarn cache
+          key: node-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run:
+          name: Building services
+          command: yarn build
+          no_output_timeout: 30m
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - build
+            - src
+            - .eslintignore
+            - .eslintrc.js
+            - .git
+            - .prettierignore
+            - .prettierrc.yaml
+            - .releaserc
+            - node_modules
+            - yarn.lock
+            - package.json
+            - jest.config.js
+            - babel.config.js
+            - tsconfig.json
+
+  prettier:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Running prettier
+          command: yarn prettier:lint
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Running lint
+          command: yarn lint
+  publish: 
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Generate changelog and tag version
+          command: yarn semantic-release
+
+workflows:
+  # Below is the definition of your workflow.
+  # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
+  # CircleCI will run this workflow on every commit.
+  # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows
+  build-test-deploy:
+    jobs:
+      - build
+      - lint:
+          requires:
+            - build
+      - prettier:
+          requires:
+            - build
+      - publish:
+          requires:
+            - lint
+            - prettier
+          context:
+            - semantic-release
+          filters: 
+            branches:
+              only:
+                - main
