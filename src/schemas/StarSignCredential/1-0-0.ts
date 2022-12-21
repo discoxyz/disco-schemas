@@ -8,6 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/StarSignCredential/1-0-0.json",
 
   title: "Star Sign Credential",
+  description: "Self attested credential to your Star/Astrological sign",
 
   properties: {
     ...BaseVerifiableCredential.properties,
