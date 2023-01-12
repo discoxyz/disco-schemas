@@ -18,6 +18,7 @@ import PronounsCredential from "./PronounsCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
+import VouchCredential from "./VouchCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 
 export {
@@ -39,7 +40,8 @@ export {
   SnapsCredential,
   TshirtSizeCredential,
   StarSignCredential,
-  CertificateOfCompletionCredential
+  VouchCredential,
+  CertificateOfCompletionCredential,
 };
 
 export const issuableSchemas: JSONSchema7[] = [
