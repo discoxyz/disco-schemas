@@ -62,8 +62,7 @@
       },
       "required": [
         "id",
-        "name",
-        "link"
+        "name"
       ],
       "type": "object"
     },

@@ -15,7 +15,7 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "name", "link"],
+      required: ["id", "name"],
       properties: {
         id: { title: "Recipient DID", type: "string", format: "uri" },
         name: { title: "Event or Podcast Name", type: "string" },
