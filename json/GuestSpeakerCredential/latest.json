@@ -38,7 +38,7 @@
           "title": "Co-presenters (DIDs, names)",
           "type": "string"
         },
-        "episode_no": {
+        "episodeNo": {
           "title": "# of episode or class",
           "type": "string"
         },

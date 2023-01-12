@@ -4,7 +4,9 @@ import AccountLinkageCredential from "./AccountLinkageCredential/latest";
 import AttendanceCredential from "./AttendanceCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
+import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
+import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
 import GMCredential from "./GMCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import KudosCredential from "./KudosCredential/latest";
@@ -18,14 +20,15 @@ import PronounsCredential from "./PronounsCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
-import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 
 export {
   AccountLinkageCredential,
   AttendanceCredential,
   BaseVerifiableCredential,
   BetaUserCredential,
+  CertificateOfCompletionCredential,
   DarkModePrefCredential,
+  GuestSpeakerCredential,
   GMCredential,
   InvestorCredential,
   KudosCredential,
@@ -37,9 +40,8 @@ export {
   ProfileCredential,
   PronounsCredential,
   SnapsCredential,
-  TshirtSizeCredential,
   StarSignCredential,
-  CertificateOfCompletionCredential
+  TshirtSizeCredential,
 };
 
 export const issuableSchemas: JSONSchema7[] = [

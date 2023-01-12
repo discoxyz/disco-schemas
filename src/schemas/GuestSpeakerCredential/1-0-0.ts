@@ -20,7 +20,7 @@ export default {
         id: { title: "Recipient DID", type: "string", format: "uri" },
         name: { title: "Event or Podcast Name", type: "string" },
         link: { title: "Link to Episode", type: "string" },
-        episode_no: { title: "# of episode or class", type: "string" },
+        episodeNo: { title: "# of episode or class", type: "string" },
         copresenter: { title: "Co-presenters (DIDs, names)", type: "string" },
         org: { title: "Presenting Institution or Organization", type: "string" },
       },
