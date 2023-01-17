@@ -98,7 +98,7 @@ To add a new schema:
     - `credentialSubject` your schema goes here!
 1. Add to the schema to `src/schemas/index.ts`
     - Import and export the schema
-    - Optional: add to `issuableSchemas` if it should be available from Disco app
+    - (Optional: add to `issuableSchemas` if it should be available from Disco app) <- We don't need to do this anymore!!
 1. Make sure to run `yarn generate` before using the schema or committing changes
 
 ### Adding a new version of a schema
