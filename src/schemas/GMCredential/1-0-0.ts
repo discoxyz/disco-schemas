@@ -8,6 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GMCredential/1-0-0.json",
 
   title: "GM Credential",
+  description: "Send a GM greeting to colleagues and friends in your network.",
 
   properties: {
     ...BaseVerifiableCredential.properties,
