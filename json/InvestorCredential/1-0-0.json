@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/InvestorCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential to be issued to all Disco investors",
+  "description": "Investor attests that the subject is a Disco investor.",
   "properties": {
     "@context": {
       "anyOf": [
