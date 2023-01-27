@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential attesting to the issuer DIDs linkage to the given username on the given service",
+  "description": "Accounts linked to a DID are proofs that the subject actively uses or manages the corresponding username.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -103,6 +103,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Account Linkage Credential",
+  "title": "Account Linkage",
   "type": "object"
 }
