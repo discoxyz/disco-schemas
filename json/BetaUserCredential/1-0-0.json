@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/BetaUserCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Beta User certifies our early beta users or testers who are testing our product before official launch. Thank you for your support and coninued patience!",
+  "description": "This credential is for our early beta users or testers who are testing our product before official launch. Thank you for your support and coninued patience!",
   "properties": {
     "@context": {
       "anyOf": [

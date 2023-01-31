@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/PronounsCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Pronouns attests the preferred pronouns of the subject.",
+  "description": "Credential containing self-attested pronoun preferences.",
   "properties": {
     "@context": {
       "anyOf": [

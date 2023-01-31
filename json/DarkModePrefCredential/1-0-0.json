@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/DarkModePrefCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Screen Mode Preference attests the subject’s preference for light or dark mode.",
+  "description": "This credential is a self-attested credential to indicate whether you have a preference for dark/light mode.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -106,6 +106,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Screen Mode Preference Credential",
+  "title": "Dark Mode Preference Credential",
   "type": "object"
 }
