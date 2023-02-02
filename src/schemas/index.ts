@@ -21,6 +21,8 @@ import SnapsCredential from "./SnapsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
+import EthDenverCredential from "./EthDenverCredential/latest";
+
 
 export {
   AccountLinkageCredential,
@@ -29,6 +31,7 @@ export {
   BetaUserCredential,
   CertificateOfCompletionCredential,
   DarkModePrefCredential,
+  EthDenverCredential,
   GuestSpeakerCredential,
   GMCredential,
   InvestorCredential,
