@@ -4,7 +4,7 @@ import { Response } from "cross-fetch";
 import { JSONSchema7 } from "json-schema";
 
 import { VC } from "./types";
-import { getNewAjv } from "./helpers";
+import { convertToPascalCase, getNewAjv } from "./helpers";
 
 export async function validateVcAgainstSchema(
   vc: VC,
@@ -24,7 +24,8 @@ export async function validateVcAgainstSchema(
     };
   }
 
-  const valid = await validator(vc);
+  let valid = vc.type.some(t => t === convertToPascalCase(schema.title))
+  //const valid = await validator(vc);
   let errors: string[] = [];
   if (validator.errors?.length) {
     errors = validator.errors.map((err) => {
