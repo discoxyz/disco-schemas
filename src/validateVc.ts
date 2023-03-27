@@ -105,7 +105,7 @@ export async function getAndValidateSchemaFromVc(
 export function buildVc(
   issuer: string,
   credSubject: Record<string, any>,
-  schema?: JSONSchema7,
+  schema: JSONSchema7,
   recipient?: string,
 ): VC {
   const vc: VC = {
@@ -125,8 +125,6 @@ export function buildVc(
       vc.expirationDate = expirationDateObj.toISOString();
     }
   }
-
   
-  return addSchemaToVc(schema!, vc, true);
-  
+  return addSchemaToVc(schema, vc, true);
 }
