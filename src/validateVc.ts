@@ -115,8 +115,7 @@ export function buildVc(
     issuanceDate: new Date().toISOString(),
     id: issuer + "#" + uuidv4(),
     credentialSubject: {
-      id: recipient || credSubject.id || issuer,
-      ...credSubject,
+      id: recipient
     },
   };
 
@@ -127,9 +126,7 @@ export function buildVc(
     }
   }
 
-  if (schema) {
-    return addSchemaToVc(schema, vc, true);
-  } else {
-    return vc;
-  }
+  
+  return addSchemaToVc(schema!, vc, true);
+  
 }
