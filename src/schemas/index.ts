@@ -15,6 +15,7 @@ import MembershipCredential from "./MembershipCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
 import OrganizationCredential from "./OrganizationCredential/latest";
+import ParticipationCredential from "./ParticipationCredential/latest";
 import PraiseCredential from "./PraiseCredential/latest";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
 import ProfileCredential from "./ProfileCredential/latest";
@@ -41,6 +42,7 @@ export {
   OfficialDisconautCredential,
   OGTwitterVerificationCredential,
   OrganizationCredential,
+  ParticipationCredential,
   PraiseCredential,
   PrimaryLanguageCredential,
   ProfileCredential,
