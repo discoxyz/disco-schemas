@@ -6,6 +6,7 @@ import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
+import EthDenverCredential from "./EthDenverCredential/latest";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
 import GMCredential from "./GMCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
@@ -14,14 +15,14 @@ import MembershipCredential from "./MembershipCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
 import OrganizationCredential from "./OrganizationCredential/latest";
+import PraiseCredential from "./PraiseCredential/latest";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
 import ProfileCredential from "./ProfileCredential/latest";
 import PronounsCredential from "./PronounsCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
-import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
+import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
-import EthDenverCredential from "./EthDenverCredential/latest";
 
 
 export {
@@ -40,6 +41,7 @@ export {
   OfficialDisconautCredential,
   OGTwitterVerificationCredential,
   OrganizationCredential,
+  PraiseCredential,
   PrimaryLanguageCredential,
   ProfileCredential,
   PronounsCredential,
