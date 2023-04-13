@@ -4,7 +4,7 @@ import { Response } from "cross-fetch";
 import { JSONSchema7 } from "json-schema";
 
 import { VC } from "./types";
-import { addSchemaToVc, getNewAjv } from "./helpers";
+import { addSchemaToVc, getNewAjv, convertToPascalCase } from "./helpers";
 import { v4 as uuidv4 } from "uuid";
 
 export async function validateVcAgainstSchema(
@@ -25,8 +25,9 @@ export async function validateVcAgainstSchema(
     };
   }
 
-  const valid = await validator(vc);
   let errors: string[] = [];
+  //validate schema shape
+  const schemaValid =  validator(vc)
   if (validator.errors?.length) {
     errors = validator.errors.map((err) => {
       let errorMessage = JSON.stringify(err);
@@ -37,6 +38,15 @@ export async function validateVcAgainstSchema(
     });
   }
 
+  //check schema title
+  const typeToValidate = convertToPascalCase(schema.title!);
+  const typeValid =  vc.type.some(t => t === typeToValidate);
+  if(!typeValid){
+    errors.push(`Error: Type invalid ${typeToValidate}`)
+  }
+
+  //check errors array to see if errors exist
+  const valid = errors.length === 0;
   return {
     valid,
     errors,
