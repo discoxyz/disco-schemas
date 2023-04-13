@@ -1,7 +1,6 @@
 import { JSONSchema7 } from "json-schema";
 
 import AccountLinkageCredential from "./AccountLinkageCredential/latest";
-import AttendanceCredential from "./AttendanceCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
@@ -10,11 +9,11 @@ import EthDenverCredential from "./EthDenverCredential/latest";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
 import GMCredential from "./GMCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
-import KudosCredential from "./KudosCredential/latest";
 import MembershipCredential from "./MembershipCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
 import OrganizationCredential from "./OrganizationCredential/latest";
+import ParticipationCredential from "./ParticipationCredential/latest";
 import PraiseCredential from "./PraiseCredential/latest";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
 import ProfileCredential from "./ProfileCredential/latest";
@@ -27,7 +26,6 @@ import VouchCredential from "./VouchCredential/latest";
 
 export {
   AccountLinkageCredential,
-  AttendanceCredential,
   BaseVerifiableCredential,
   BetaUserCredential,
   CertificateOfCompletionCredential,
@@ -36,11 +34,11 @@ export {
   GuestSpeakerCredential,
   GMCredential,
   InvestorCredential,
-  KudosCredential,
   MembershipCredential,
   OfficialDisconautCredential,
   OGTwitterVerificationCredential,
   OrganizationCredential,
+  ParticipationCredential,
   PraiseCredential,
   PrimaryLanguageCredential,
   ProfileCredential,
