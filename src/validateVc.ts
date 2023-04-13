@@ -25,9 +25,9 @@ export async function validateVcAgainstSchema(
     };
   }
 
-  let valid = vc.type.some(t => t === convertToPascalCase(schema.title!))
-  //const valid = await validator(vc);
   let errors: string[] = [];
+  //validate schema shape
+  const schemaValid =  validator(vc)
   if (validator.errors?.length) {
     errors = validator.errors.map((err) => {
       let errorMessage = JSON.stringify(err);
@@ -38,6 +38,15 @@ export async function validateVcAgainstSchema(
     });
   }
 
+  //check schema title
+  const typeToValidate = convertToPascalCase(schema.title!);
+  const typeValid =  vc.type.some(t => t === typeToValidate);
+  if(!typeValid){
+    errors.push(`Error: Type invalid ${typeToValidate}`)
+  }
+
+  //check errors array to see if errors exist
+  const valid = errors.length === 0;
   return {
     valid,
     errors,
