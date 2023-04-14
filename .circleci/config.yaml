@@ -1,0 +1,168 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+orbs:
+  # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
+  # Orbs reduce the amount of configuration required for common tasks.
+  # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
+
+  node: circleci/node@5.1.0
+  slack: circleci/slack@4.1
+
+defaults: &defaults
+  docker:
+    - image: cimg/node:16.17.0
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore yarn cache
+          key: node-modules-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install modules
+          command: yarn --frozen-lockfile install
+      - save_cache:
+          name: Save yarn cache
+          key: node-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run:
+          name: Building services
+          command: yarn build
+          no_output_timeout: 30m
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - dist
+            - json
+            - node_modules
+            - src
+            - .eslintignore
+            - .eslintrc.json
+            - .git
+            - .gitignore
+            - .prettierrc
+            - babel.config.json
+            - jest.config.ts
+            - package.json
+            - release.config.cjs
+            - tsconfig.json
+            - yarn.lock
+      - slack/notify:
+          branch_pattern: main
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+      - slack/notify:
+          branch_pattern: production
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+
+  prettier:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Running prettier
+          command: yarn prettier
+      - slack/notify:
+          branch_pattern: main
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+      - slack/notify:
+          branch_pattern: production
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Running lint
+          command: yarn lint 
+      - slack/notify:
+          branch_pattern: main
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+      - slack/notify:
+          branch_pattern: production
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Running tests
+          command: yarn test
+      - slack/notify:
+          branch_pattern: main
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+      - slack/notify:
+          branch_pattern: production
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+  publish: 
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Generate changelog and tag version
+          command: yarn semantic-release
+      - slack/notify:
+          event: fail
+          mentions: '@engineers'
+          template: basic_fail_1
+      - slack/notify:
+          event: pass
+          template: success_tagged_deploy_1
+
+workflows:
+  # Below is the definition of your workflow.
+  # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
+  # CircleCI will run this workflow on every commit.
+  # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows
+  build-test-deploy:
+    jobs:
+      - build:
+          context: slack-secrets
+      - lint:
+          requires:
+            - build
+          context: slack-secrets
+      - prettier:
+          requires:
+            - build
+          context: slack-secrets
+      - test:
+          requires:
+            - lint
+            - prettier
+          context: slack-secrets
+      - publish:
+          requires:
+            - test
+          context:
+            - semantic-release
+            - slack-secrets
+          filters: 
+            branches:
+              only:
+                - main
+                - production
