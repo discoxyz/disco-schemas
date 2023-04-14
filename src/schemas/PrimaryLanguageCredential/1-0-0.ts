@@ -18,7 +18,7 @@ export default {
       required: ["id", "language"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
-        language: {   
+        language: {
           type: "string",
           title: "Language",
           enum: [
@@ -145,8 +145,8 @@ export default {
             "Xhosa",
             "Yiddish",
             "Zulu",
-          ]
-        }
+          ],
+        },
       },
     },
   },

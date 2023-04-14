@@ -22,12 +22,9 @@ export default {
         preference: {
           type: "string",
           title: "Preference",
-          enum: [
-            "Light",
-            "Dark"
-          ]
+          enum: ["Light", "Dark"],
         },
       },
-    }
+    },
   },
 } as JSONSchema7;

@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/EthDenverCredential/1-0-0.json",
 
   title: "Disco @ EthDenver 2023",
-  description: "This credential serves as proof of attendance in the Disco-verse for attending our ETHDenver activation. It will be scanned and verified at the entrance to our in-person event!",
+  description:
+    "This credential serves as proof of attendance in the Disco-verse for attending our ETHDenver activation. It will be scanned and verified at the entrance to our in-person event!",
 
   properties: {
     ...BaseVerifiableCredential.properties,

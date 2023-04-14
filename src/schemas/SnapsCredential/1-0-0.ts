@@ -21,8 +21,11 @@ export default {
         snapsType: {
           type: "string",
           title: "Snaps Type",
-          enum: ["Immaculate Vibes: Thank you for your awesome energy", "Problem Solver: Thank you for working with me to solve a tough challenge together",
-          "Miracle Worker: Thank you for unexpectedly and proactively doing something awesome that impacted my day for the better!"]
+          enum: [
+            "Immaculate Vibes: Thank you for your awesome energy",
+            "Problem Solver: Thank you for working with me to solve a tough challenge together",
+            "Miracle Worker: Thank you for unexpectedly and proactively doing something awesome that impacted my day for the better!",
+          ],
         },
       },
     },

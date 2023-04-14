@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OGTwitterVerificationCredential/1-0-0.json",
 
   title: "OG Twitter Verification Credential",
-  description: "OG Twitter Verification attests that the subject owned a verified Twitter account before November 5. 2022.",
+  description:
+    "OG Twitter Verification attests that the subject owned a verified Twitter account before November 5. 2022.",
   properties: {
     ...BaseVerifiableCredential.properties,
 

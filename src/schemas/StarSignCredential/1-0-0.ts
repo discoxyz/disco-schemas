@@ -21,8 +21,21 @@ export default {
         starSign: {
           type: "string",
           title: "Star Sign",
-          enum: ["Aries—March 21-April 19", "Taurus—April 20-May 20", "Gemini—May 21-June 20", "Cancer—June 21-July 22", "Leo—July 23-August 22", "Virgo—August 23-September 22", "Libra—September 23-October 22", "Scorpio—October 23-November 21", "Sagittarius—Nov 22-Dec 21", "Capricorn —Dec 22-Jan 19", "Aquarius—Jan 20 - Feb 18", "Pisces—Feb 19 -March 20"]
-        }
+          enum: [
+            "Aries—March 21-April 19",
+            "Taurus—April 20-May 20",
+            "Gemini—May 21-June 20",
+            "Cancer—June 21-July 22",
+            "Leo—July 23-August 22",
+            "Virgo—August 23-September 22",
+            "Libra—September 23-October 22",
+            "Scorpio—October 23-November 21",
+            "Sagittarius—Nov 22-Dec 21",
+            "Capricorn —Dec 22-Jan 19",
+            "Aquarius—Jan 20 - Feb 18",
+            "Pisces—Feb 19 -March 20",
+          ],
+        },
       },
     },
   },

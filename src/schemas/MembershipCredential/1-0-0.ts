@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
 
   title: "Membership Credential",
-  description: "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
+  description:
+    "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
 
   properties: {
     ...BaseVerifiableCredential.properties,

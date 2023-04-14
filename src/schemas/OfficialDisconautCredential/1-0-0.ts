@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OfficialDisconautCredential/1-0-0.json",
 
   title: "Official Disconaut Credential",
-  description: "Disconaut attests that the holder has completed Disco onboarding and is the proud owner of a data backpack.",
+  description:
+    "Disconaut attests that the holder has completed Disco onboarding and is the proud owner of a data backpack.",
   properties: {
     ...BaseVerifiableCredential.properties,
 

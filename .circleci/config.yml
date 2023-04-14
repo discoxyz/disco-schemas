@@ -44,11 +44,11 @@ jobs:
             - .eslintrc.json
             - .git
             - .gitignore
-            - .prettierrc
+            - .prettierrc.yaml
             - babel.config.json
             - jest.config.ts
             - package.json
-            - release.config.cjs
+            - release.config.js
             - tsconfig.json
             - yarn.lock
       - slack/notify:

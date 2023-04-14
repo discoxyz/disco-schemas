@@ -23,7 +23,6 @@ import StarSignCredential from "./StarSignCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
 
-
 export {
   AccountLinkageCredential,
   BaseVerifiableCredential,

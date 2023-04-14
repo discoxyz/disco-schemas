@@ -21,9 +21,9 @@ export default {
         pronoun: {
           type: "string",
           title: "Pronoun Preference",
-          enum: ["They/Them/Theirs", "She/Her/Hers", "He/Him/His"]
+          enum: ["They/Them/Theirs", "She/Her/Hers", "He/Him/His"],
         },
-      }
+      },
     },
   },
 } as JSONSchema7;

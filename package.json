@@ -15,8 +15,10 @@
     "generate-json": "ts-node src/generate-json.ts",
     "generate-latest-symlinks": "ts-node src/generate-latest-symlinks.ts",
     "prettier": "prettier --config .prettierrc.yaml --write --list-different './**/*.{ts,tsx,json,md}'",
+    "prettier:fix": "prettier --config .prettierrc.yaml '**/*.{ts,tsx,json,md}' --write",
     "prettier:lint": "prettier --config .prettierrc.yaml --list-different './**/*.{ts,tsx,json,md}'",
     "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
     "test": "jest",
     "publish-if-new-version": "if [ \"$(npm view disco-schemas@$npm_package_version)\" ]; then echo \"Version $npm_package_version already published\"; else npm publish; fi",
     "prepublishOnly": "npm run build"

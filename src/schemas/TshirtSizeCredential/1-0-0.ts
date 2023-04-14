@@ -20,8 +20,21 @@ export default {
         tshirtSize: {
           type: "string",
           title: "Tshirt Size",
-          enum: ["XS - Unisex", "S - Unisex", "M - Unisex","L - Unisex","XL - Unisex","XXL - Unisex","XS - Women","S - Women","M - Women","L - Women", "XL - Women", "XXL - Women"]
-        }
+          enum: [
+            "XS - Unisex",
+            "S - Unisex",
+            "M - Unisex",
+            "L - Unisex",
+            "XL - Unisex",
+            "XXL - Unisex",
+            "XS - Women",
+            "S - Women",
+            "M - Women",
+            "L - Women",
+            "XL - Women",
+            "XXL - Women",
+          ],
+        },
       },
     },
   },

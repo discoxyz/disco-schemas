@@ -27,7 +27,7 @@ export async function validateVcAgainstSchema(
 
   let errors: string[] = [];
   //validate schema shape
-  const schemaValid =  validator(vc)
+  const schemaValid = validator(vc);
   if (validator.errors?.length) {
     errors = validator.errors.map((err) => {
       let errorMessage = JSON.stringify(err);
@@ -40,9 +40,9 @@ export async function validateVcAgainstSchema(
 
   //check schema title
   const typeToValidate = convertToPascalCase(schema.title!);
-  const typeValid =  vc.type.some(t => t === typeToValidate);
-  if(!typeValid){
-    errors.push(`Error: Type invalid ${typeToValidate}`)
+  const typeValid = vc.type.some((t) => t === typeToValidate);
+  if (!typeValid) {
+    errors.push(`Error: Type invalid ${typeToValidate}`);
   }
 
   //check errors array to see if errors exist
@@ -112,12 +112,7 @@ export async function getAndValidateSchemaFromVc(
   };
 }
 
-export function buildVc(
-  issuer: string,
-  credSubject: Record<string, any>,
-  schema: JSONSchema7,
-  recipient?: string,
-): VC {
+export function buildVc(issuer: string, credSubject: Record<string, any>, schema: JSONSchema7, recipient?: string): VC {
   const vc: VC = {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
     type: ["VerifiableCredential"],
@@ -125,7 +120,7 @@ export function buildVc(
     issuanceDate: new Date().toISOString(),
     id: issuer + "#" + uuidv4(),
     credentialSubject: {
-      id: recipient
+      id: recipient,
     },
   };
 
@@ -135,6 +130,6 @@ export function buildVc(
       vc.expirationDate = expirationDateObj.toISOString();
     }
   }
-  
+
   return addSchemaToVc(schema, vc, true);
 }
