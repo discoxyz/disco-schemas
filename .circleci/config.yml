@@ -46,7 +46,7 @@ jobs:
             - .gitignore
             - .prettierrc.yaml
             - babel.config.json
-            - jest.config.ts
+            - jest.config.js
             - package.json
             - release.config.js
             - tsconfig.json
