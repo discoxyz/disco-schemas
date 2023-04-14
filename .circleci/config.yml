@@ -44,8 +44,10 @@ jobs:
             - .eslintrc.js
             - .git
             - .gitignore
+            - .prettierignore
             - .prettierrc.yaml
-            - babel.config.json
+            - babel.config.js
+            - commitlint.config.js
             - jest.config.js
             - package.json
             - release.config.js
