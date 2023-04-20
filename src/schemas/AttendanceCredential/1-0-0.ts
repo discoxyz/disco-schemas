@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AttendanceCredential/1-0-0.json",
 
-  title: "Attendance Credential",
+  title: "Attendance",
   description: "Attendance attests that the subject attended an event or gathering hosted by the issuer.",
   properties: {
     ...BaseVerifiableCredential.properties,

@@ -116,6 +116,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Organization Credential",
+  "title": "Organization",
   "type": "object"
 }

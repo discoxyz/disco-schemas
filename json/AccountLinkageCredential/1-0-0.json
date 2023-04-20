@@ -103,6 +103,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Account Linkage Credential",
+  "title": "Account Linkage",
   "type": "object"
 }

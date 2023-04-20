@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
 
-  title: "Profile Credential",
+  title: "Profile",
   description: "Credential containing profile information",
 
   properties: {

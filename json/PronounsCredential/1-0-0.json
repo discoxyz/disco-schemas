@@ -107,6 +107,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Pronouns Credential",
+  "title": "Pronouns",
   "type": "object"
 }

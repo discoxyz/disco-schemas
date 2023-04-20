@@ -114,6 +114,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Profile Credential",
+  "title": "Profile",
   "type": "object"
 }

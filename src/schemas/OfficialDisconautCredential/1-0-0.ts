@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OfficialDisconautCredential/1-0-0.json",
 
-  title: "Official Disconaut Credential",
+  title: "Official Disconaut",
   description:
     "Disconaut attests that the holder has completed Disco onboarding and is the proud owner of a data backpack.",
   properties: {
