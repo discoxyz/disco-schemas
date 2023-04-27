@@ -1,11 +1,10 @@
 import { ValidateFunction } from "ajv";
 import "cross-fetch/polyfill";
-import { Response } from "cross-fetch";
 import { JSONSchema7 } from "json-schema";
 
-import { VC } from "./types";
-import { addSchemaToVc, getNewAjv, convertToPascalCase } from "./helpers";
 import { v4 as uuidv4 } from "uuid";
+import { addSchemaToVc, convertToPascalCase, getNewAjv } from "./helpers";
+import { VC } from "./types";
 
 export async function validateVcAgainstSchema(
   vc: VC,
@@ -39,7 +38,7 @@ export async function validateVcAgainstSchema(
   }
 
   //check schema title
-  const typeToValidate = convertToPascalCase(schema.title!);
+  const typeToValidate = convertToPascalCase(schema.title ?? "");
   const typeValid = vc.type.some((t) => t === typeToValidate);
   if (!typeValid) {
     errors.push(`Error: Type invalid ${typeToValidate}`);
@@ -65,14 +64,18 @@ export async function fetchJsonSchemaFromVc(vc: VC): Promise<JSONSchema7> {
     throw Error(`"credentialSchema.id" property not found`);
   }
 
+  return await fetchJsonSchema(vc.credentialSchema.id);
+}
+/** Fetches JSON Schema from a url and returns it. Throws error if unable to fetch. */
+export async function fetchJsonSchema(schemaUrl: string): Promise<JSONSchema7> {
   let res: Response;
   try {
-    res = await fetch(vc.credentialSchema.id);
+    res = await fetch(schemaUrl);
     if (res.status >= 400) {
-      throw Error(`${res.status} response when fetching JSON Schema from ${vc.credentialSchema.id}`);
+      throw Error(`${res.status} response when fetching JSON Schema from ${schemaUrl}`);
     }
   } catch (err: any) {
-    throw Error(`Failed to fetch JSON Schema from ${vc.credentialSchema.id}: ${err.message}`);
+    throw Error(`Failed to fetch JSON Schema from ${schemaUrl}: ${err.message}`);
   }
 
   try {
@@ -80,7 +83,7 @@ export async function fetchJsonSchemaFromVc(vc: VC): Promise<JSONSchema7> {
     return responseIsJson ? await res.json() : JSON.parse(await res.text());
   } catch (err: any) {
     throw Error(
-      `Failed to load JSON Schema from ${vc.credentialSchema.id}, could not get or parse JSON response: ${err.message}`,
+      `Failed to load JSON Schema from ${schemaUrl}, could not get or parse JSON response: ${err.message}`,
     );
   }
 }
@@ -120,6 +123,7 @@ export function buildVc(issuer: string, credSubject: Record<string, any>, schema
     issuanceDate: new Date().toISOString(),
     id: issuer + "#" + uuidv4(),
     credentialSubject: {
+      ...credSubject,
       id: recipient,
     },
   };
