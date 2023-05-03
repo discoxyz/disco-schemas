@@ -3,7 +3,7 @@ import "cross-fetch/polyfill";
 import { JSONSchema7 } from "json-schema";
 
 import { v4 as uuidv4 } from "uuid";
-import { addSchemaToVc, convertToPascalCase, getNewAjv } from "./helpers";
+import { addSchemaToVc, getNewAjv } from "./helpers";
 import { VC } from "./types";
 
 export async function validateVcAgainstSchema(
@@ -38,7 +38,7 @@ export async function validateVcAgainstSchema(
   }
 
   //check schema title
-  const typeToValidate = convertToPascalCase(schema.title ?? "");
+  const typeToValidate = schema?.$id?.slice(schema.$id.indexOf("json/") + 5, schema.$id.lastIndexOf("/"));
   const typeValid = vc.type.some((t) => t === typeToValidate);
   if (!typeValid) {
     errors.push(`Error: Type invalid ${typeToValidate}`);
