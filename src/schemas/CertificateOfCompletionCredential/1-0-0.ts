@@ -8,7 +8,7 @@ export default {
   $id:
     "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/CertificateOfCompletionCredential/1-0-0.json",
 
-  title: "Certificate of Completion Credential",
+  title: "Certificate of Completion",
   description: "Credential that attests to the completion of an educational program or course",
 
   properties: {

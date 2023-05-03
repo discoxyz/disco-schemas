@@ -103,6 +103,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Kudos Credential",
+  "title": "Kudos",
   "type": "object"
 }

@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SnapsCredential/1-0-0.json",
 
-  title: "Snaps Credential",
+  title: "Snaps",
   description: "Send snaps to celebrate a friend or colleague doing something positive and helpful.",
 
   properties: {

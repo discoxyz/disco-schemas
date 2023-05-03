@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
 
-  title: "Account Linkage Credential",
+  title: "Account Linkage",
   description: "Credential attesting to the issuer DIDs linkage to the given username on the given service",
 
   properties: {

@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GMCredential/1-0-0.json",
 
-  title: "GM Credential",
+  title: "GM",
   description: "Send a GM greeting to colleagues and friends in your network.",
 
   properties: {

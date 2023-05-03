@@ -116,6 +116,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Tshirt Size Credential",
+  "title": "Tshirt Size",
   "type": "object"
 }
