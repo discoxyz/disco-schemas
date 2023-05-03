@@ -19,7 +19,7 @@ export default {
       required: ["id", "organization"],
       properties: {
         id: { title: "Member DID", type: "string", format: "uri" },
-        organization: { title: "Organization", type: "string" },
+        organization: { title: "Organization Name", type: "string" },
         membershipType: { title: "Membership Type", type: "string" },
         membershipLevel: { title: "Membership Level", type: "string" },
         memberId: { title: "Member ID", type: "string" },

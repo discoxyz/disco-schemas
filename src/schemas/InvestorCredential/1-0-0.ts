@@ -17,7 +17,7 @@ export default {
       type: "object",
       required: ["id", "round"],
       properties: {
-        id: { title: "Member DID", type: "string", format: "uri" },
+        id: { title: "Investor DID", type: "string", format: "uri" },
         round: { title: "Round", type: "string" },
         description: { title: "Description and Notes", type: "string" },
         expiration: { title: "Expiration", type: "string", format: "date" },
