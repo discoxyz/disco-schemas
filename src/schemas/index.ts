@@ -3,6 +3,7 @@ import AccountLinkageCredential from "./AccountLinkageCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
+import ContributionCredential from "./ContributionCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
 import EthDenverCredential from "./EthDenverCredential/latest";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
@@ -27,6 +28,7 @@ export {
   BaseVerifiableCredential,
   BetaUserCredential,
   CertificateOfCompletionCredential,
+  ContributionCredential,
   DarkModePrefCredential,
   EthDenverCredential,
   GuestSpeakerCredential,
