@@ -1,6 +1,6 @@
-## [1.2.0](https://github.com/discoxyz/disco-schemas/compare/v1.1.0...v1.2.0) (2023-04-27)
+## [1.2.1](https://github.com/discoxyz/disco-schemas/compare/v1.2.0...v1.2.1) (2023-05-03)
 
 
-### Features
+### Bug Fixes
 
-* broke out json schema fetch via url ([a03a92b](https://github.com/discoxyz/disco-schemas/commit/a03a92bd54576484d4dfeb87661d5815e8d29030))
+* Test get type from url ([2523b63](https://github.com/discoxyz/disco-schemas/commit/2523b63a557e30a01617649d5034afad557b70a7))
