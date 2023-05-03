@@ -61,7 +61,7 @@
           "type": "string"
         },
         "organization": {
-          "title": "Organization",
+          "title": "Organization Name",
           "type": "string"
         }
       },

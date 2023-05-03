@@ -45,7 +45,7 @@
         },
         "id": {
           "format": "uri",
-          "title": "Member DID",
+          "title": "Investor DID",
           "type": "string"
         },
         "round": {

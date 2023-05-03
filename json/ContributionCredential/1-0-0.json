@@ -57,7 +57,7 @@
           "type": "string"
         },
         "name": {
-          "title": "Name",
+          "title": "DAO Name",
           "type": "string"
         },
         "url": {
