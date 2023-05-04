@@ -2,7 +2,7 @@ import Ajv from "ajv";
 import addFormats from "ajv-formats";
 import slugify from "@sindresorhus/slugify";
 import { JSONSchema7 } from "json-schema";
-import { VC } from "./types";
+import { VC } from "./types.js";
 
 export function convertToPascalCase(s: string): string {
   return slugify(s).replace(/(^|-)./g, (x) => x.replace("-", "").toUpperCase());

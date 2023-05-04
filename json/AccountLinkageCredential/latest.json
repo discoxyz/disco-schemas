@@ -1,108 +1,110 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential attesting to the issuer DIDs linkage to the given username on the given service",
-  "properties": {
-    "@context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
-      ]
-    },
-    "credentialSchema": {
-      "properties": {
-        "id": {
-          "format": "uri",
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ],
-      "type": "object"
-    },
-    "credentialSubject": {
-      "properties": {
-        "type": {
-          "description": "Type of account, for instance \"Twitter\" or \"Domain Name\"",
-          "title": "Type",
-          "type": "string"
-        },
-        "username": {
-          "title": "Username",
-          "type": "string"
-        }
-      },
-      "required": [
-        "type",
-        "username"
-      ],
-      "type": "object"
-    },
-    "expirationDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "id": {
-      "format": "uri",
-      "type": "string"
-    },
-    "issuanceDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "issuer": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "properties": {
-            "id": {
-              "format": "uri",
-              "type": "string"
-            }
-          },
-          "required": [
-            "id"
-          ],
-          "type": "object"
-        }
-      ]
-    },
-    "type": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
+  "default": {
+    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Credential attesting to the issuer DIDs linkage to the given username on the given service",
+    "properties": {
+      "@context": {
+        "anyOf": [
+          {
             "type": "string"
           },
-          "type": "array"
-        }
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "credentialSubject"
-  ],
-  "title": "Account Linkage Credential",
-  "type": "object"
+          {
+            "type": "array"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "credentialSchema": {
+        "properties": {
+          "id": {
+            "format": "uri",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "credentialSubject": {
+        "properties": {
+          "type": {
+            "description": "Type of account, for instance \"Twitter\" or \"Domain Name\"",
+            "title": "Type",
+            "type": "string"
+          },
+          "username": {
+            "title": "Username",
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "username"
+        ],
+        "type": "object"
+      },
+      "expirationDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "id": {
+        "format": "uri",
+        "type": "string"
+      },
+      "issuanceDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "issuer": {
+        "anyOf": [
+          {
+            "format": "uri",
+            "type": "string"
+          },
+          {
+            "properties": {
+              "id": {
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "credentialSubject"
+    ],
+    "title": "Account Linkage Credential",
+    "type": "object"
+  }
 }

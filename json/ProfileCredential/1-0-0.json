@@ -1,119 +1,121 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Credential containing profile information",
-  "properties": {
-    "@context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
-      ]
-    },
-    "credentialSchema": {
-      "properties": {
-        "id": {
-          "format": "uri",
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ],
-      "type": "object"
-    },
-    "credentialSubject": {
-      "properties": {
-        "avatar": {
-          "format": "uri",
-          "title": "Avatar URL",
-          "type": "string"
-        },
-        "banner": {
-          "format": "uri",
-          "title": "Banner URL",
-          "type": "string"
-        },
-        "bio": {
-          "maxLength": 200,
-          "title": "Bio",
-          "type": "string"
-        },
-        "id": {
-          "format": "uri",
-          "title": "DID",
-          "type": "string"
-        },
-        "name": {
-          "title": "Name",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    },
-    "expirationDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "id": {
-      "format": "uri",
-      "type": "string"
-    },
-    "issuanceDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "issuer": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "properties": {
-            "id": {
-              "format": "uri",
-              "type": "string"
-            }
-          },
-          "required": [
-            "id"
-          ],
-          "type": "object"
-        }
-      ]
-    },
-    "type": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
+  "default": {
+    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProfileCredential/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Credential containing profile information",
+    "properties": {
+      "@context": {
+        "anyOf": [
+          {
             "type": "string"
           },
-          "type": "array"
-        }
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "credentialSubject"
-  ],
-  "title": "Profile Credential",
-  "type": "object"
+          {
+            "type": "array"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "credentialSchema": {
+        "properties": {
+          "id": {
+            "format": "uri",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "credentialSubject": {
+        "properties": {
+          "avatar": {
+            "format": "uri",
+            "title": "Avatar URL",
+            "type": "string"
+          },
+          "banner": {
+            "format": "uri",
+            "title": "Banner URL",
+            "type": "string"
+          },
+          "bio": {
+            "maxLength": 200,
+            "title": "Bio",
+            "type": "string"
+          },
+          "id": {
+            "format": "uri",
+            "title": "DID",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "expirationDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "id": {
+        "format": "uri",
+        "type": "string"
+      },
+      "issuanceDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "issuer": {
+        "anyOf": [
+          {
+            "format": "uri",
+            "type": "string"
+          },
+          {
+            "properties": {
+              "id": {
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "credentialSubject"
+    ],
+    "title": "Profile Credential",
+    "type": "object"
+  }
 }
