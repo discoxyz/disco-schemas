@@ -98,6 +98,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Official Disconaut",
+  "title": "Official Disconaut Credential",
   "type": "object"
 }

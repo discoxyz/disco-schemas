@@ -101,6 +101,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Beta User",
+  "title": "Beta User Credential",
   "type": "object"
 }

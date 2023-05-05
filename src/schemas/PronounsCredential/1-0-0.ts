@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/PronounsCredential/1-0-0.json",
 
-  title: "Pronouns",
+  title: "Pronouns Credential",
   description: "Credential containing self-attested pronoun preferences.",
 
   properties: {

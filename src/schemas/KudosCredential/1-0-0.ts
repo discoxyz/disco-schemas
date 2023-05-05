@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/KudosCredential/1-0-0.json",
 
-  title: "Kudos",
+  title: "Kudos Credential",
   description: "Credential offering kudos to the recipient",
 
   properties: {

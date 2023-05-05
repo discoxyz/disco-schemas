@@ -107,6 +107,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Snaps",
+  "title": "Snaps Credential",
   "type": "object"
 }

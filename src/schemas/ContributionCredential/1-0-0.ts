@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ContributionCredential/1-0-0.json",
 
-  title: "Contribution",
+  title: "Contribution Credential",
   description: "Enables you to capture and contextualize contributions made by a person",
 
   properties: {

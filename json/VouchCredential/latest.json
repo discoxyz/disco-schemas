@@ -98,6 +98,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Vouch",
+  "title": "Vouch Credential",
   "type": "object"
 }

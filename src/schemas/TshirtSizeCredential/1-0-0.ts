@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TshirtSizeCredential/1-0-0.json",
 
-  title: "Tshirt Size",
+  title: "Tshirt Size Credential",
   description: "Tshirt Size attests the subject’s t-shirt size.",
   properties: {
     ...BaseVerifiableCredential.properties,
