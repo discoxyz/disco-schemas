@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json",
 
-  title: "Organization",
+  title: "Organization Credential",
   description: "Group or Organization unlocks tools for community management.",
   properties: {
     ...BaseVerifiableCredential.properties,

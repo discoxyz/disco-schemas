@@ -117,6 +117,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "OG Twitter Verified",
+  "title": "OG Twitter Verification Credential",
   "type": "object"
 }

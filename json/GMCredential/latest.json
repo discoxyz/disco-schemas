@@ -98,6 +98,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "GM",
+  "title": "GM Credential",
   "type": "object"
 }

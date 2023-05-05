@@ -112,6 +112,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Investor",
+  "title": "Investor Credential",
   "type": "object"
 }
