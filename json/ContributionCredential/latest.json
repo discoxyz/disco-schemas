@@ -57,7 +57,7 @@
           "type": "string"
         },
         "name": {
-          "title": "Organization Name",
+          "title": "Name",
           "type": "string"
         },
         "url": {

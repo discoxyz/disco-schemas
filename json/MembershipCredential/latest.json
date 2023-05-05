@@ -61,7 +61,7 @@
           "type": "string"
         },
         "organization": {
-          "title": "Organization Name",
+          "title": "Organization",
           "type": "string"
         }
       },
@@ -124,6 +124,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Membership",
+  "title": "Membership Credential",
   "type": "object"
 }

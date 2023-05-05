@@ -227,6 +227,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Primary Language Preference",
+  "title": "Primary Language Preference Credential",
   "type": "object"
 }

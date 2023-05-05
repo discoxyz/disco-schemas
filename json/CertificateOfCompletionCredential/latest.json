@@ -110,6 +110,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Certificate of Completion",
+  "title": "Certificate of Completion Credential",
   "type": "object"
 }

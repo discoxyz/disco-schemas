@@ -112,6 +112,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Attendance",
+  "title": "Attendance Credential",
   "type": "object"
 }

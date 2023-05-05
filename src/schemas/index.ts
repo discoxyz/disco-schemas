@@ -1,4 +1,5 @@
-/* AttendanceCredential and KudosCredential have been deprecated for business reasons */
+import { JSONSchema7 } from "json-schema";
+
 import AccountLinkageCredential from "./AccountLinkageCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
@@ -48,3 +49,11 @@ export {
   TshirtSizeCredential,
   VouchCredential,
 };
+
+export const issuableSchemas: JSONSchema7[] = [
+  GMCredential,
+  MembershipCredential,
+  BetaUserCredential,
+  InvestorCredential,
+  OrganizationCredential,
+];

@@ -18,7 +18,7 @@ export default {
       required: ["id", "name", "category", "description"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
-        name: { title: "Organization Name", type: "string" },
+        name: { title: "Name", type: "string" },
         category: {
           title: "Category",
           type: "string",

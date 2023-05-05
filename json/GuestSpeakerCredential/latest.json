@@ -119,6 +119,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Guest Speaker",
+  "title": "Guest Speaker Credential",
   "type": "object"
 }

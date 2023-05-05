@@ -45,7 +45,7 @@
         },
         "id": {
           "format": "uri",
-          "title": "Investor DID",
+          "title": "Member DID",
           "type": "string"
         },
         "round": {
@@ -112,6 +112,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Investor",
+  "title": "Investor Credential",
   "type": "object"
 }

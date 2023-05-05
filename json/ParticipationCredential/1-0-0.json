@@ -121,6 +121,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Participation",
+  "title": "Participation Credential",
   "type": "object"
 }
