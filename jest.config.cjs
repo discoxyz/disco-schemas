@@ -1,6 +1,5 @@
 module.exports = {
-  preset: "ts-jest",
-
+  preset: "ts-jest/presets/default-esm",
   clearMocks: true,
   collectCoverage: true,
   coveragePathIgnorePatterns: [
@@ -18,6 +17,10 @@ module.exports = {
     'node'
   ],
 
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
+
   testEnvironment: 'node',
 
   // The glob patterns Jest uses to detect test files
@@ -26,8 +29,13 @@ module.exports = {
   ],
   // A map from regular expressions to paths to transformers
   transform: {
-    '\\.ts$': 'ts-jest',
     '\\.js$': 'babel-jest',
+    '\\.ts$': [
+      'ts-jest',
+      {
+        useESM: true,
+      },
+    ],
   },
 
   transformIgnorePatterns: ['node_modules/(?!@sindresorhus|escape-string-regexp)'],

@@ -1,14 +1,28 @@
-import "jest";
-import fetchMock from "jest-fetch-mock";
-import { getAndValidateSchemaFromVc, validateVcAgainstSchema } from "./validateVc";
-import { AccountLinkageCredential } from "./schemas";
-import { EXAMPLE_VC } from "./helpers";
+import { jest } from "@jest/globals";
+import { Response } from "cross-fetch";
+import { AccountLinkageCredential } from "./schemas/index.js";
+import { EXAMPLE_VC } from "./helpers.js";
+
+jest.unstable_mockModule('cross-fetch', () => {
+  const fetchFunc = jest.fn(async (url: string, opts: any = {}) => ({
+    ok: true,
+    json: async () => {
+      return { status: 200, body: EXAMPLE_VC.credentialSchema }
+    },
+  }))
+  return {
+    default: fetchFunc,
+  }
+})
+
 
 const vc = EXAMPLE_VC;
+let validateVcAgainstSchema: any;
+let getAndValidateSchemaFromVc: any;
 
-beforeEach(() => {
-  fetchMock.enableMocks();
-  fetchMock.mockResponse(JSON.stringify(AccountLinkageCredential));
+beforeAll( async () => {
+  validateVcAgainstSchema = (await import("./validateVc.js")).validateVcAgainstSchema
+  getAndValidateSchemaFromVc = await (await import("./validateVc.js")).getAndValidateSchemaFromVc
 });
 
 it("should validate VC against a schema", async () => {
@@ -34,6 +48,9 @@ it("should detect missing property from JSON Schema", async () => {
 });
 
 it("should validate VC by its credentialSchema property", async () => {
+  const fetch = await import("cross-fetch")
+  jest.spyOn(fetch, "default").mockImplementation(()=> { return Promise.resolve(new Response(JSON.stringify(AccountLinkageCredential), { status: 200 }))})
+
   const { valid, errors, schema } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(true);
   expect(errors.length).toBe(0);
@@ -49,6 +66,7 @@ it("should error on missing `credentialSchema`", async () => {
   expect(errors.length).toBe(1);
   expect(errors[0]).toMatch(/No "credentialSchema" property found/);
 });
+
 it("should error on unsupported `credentialSchema.type`", async () => {
   const { valid, errors } = await getAndValidateSchemaFromVc({
     ...(vc as any),
@@ -69,20 +87,25 @@ it("should error on missing `credentialSchema.id`", async () => {
       id: undefined,
     },
   });
+
   expect(valid).toBe(false);
   expect(errors.length).toBe(1);
   expect(errors[0]).toMatch(/"credentialSchema.id" property not found/);
 });
 
 it("should error on failure to fetch JSON Schema", async () => {
-  fetchMock.mockResponse(() => Promise.reject(new Error("nope")));
+  const fetch = await import("cross-fetch")
+  jest.spyOn(fetch, "default").mockImplementationOnce(()=> { return Promise.reject(Error("Nope"))})
+
   const { valid, errors } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(false);
   expect(errors.length).toBe(1);
   expect(errors[0]).toMatch(/Failed to (load|fetch) JSON Schema/);
 });
 it("should error on non-200 response when fetching JSON Schema", async () => {
-  fetchMock.mockResponse(() => Promise.resolve({ status: 404 }));
+  const fetch = await import("cross-fetch")
+  jest.spyOn(fetch, "default").mockImplementationOnce(()=> { return Promise.resolve(new Response(undefined, { status: 404 }))})
+
   const { valid, errors } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(false);
   expect(errors.length).toBeGreaterThanOrEqual(1);
