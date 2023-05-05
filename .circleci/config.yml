@@ -41,7 +41,7 @@ jobs:
             - node_modules
             - src
             - .eslintignore
-            - .eslintrc.js
+            - .eslintrc.cjs
             - .git
             - .gitignore
             - .prettierignore
