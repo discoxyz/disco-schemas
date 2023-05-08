@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProofOfHackCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProofOfMintCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Proof of Hack recognizes the holder for participating in a Hackathon.",
+  "description": "Proof of Mint proves/recognizes the holder is an original minter of this NFT drop.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,13 +34,17 @@
     },
     "credentialSubject": {
       "properties": {
-        "eventDate": {
-          "format": "date",
-          "title": "Event Date",
+        "chain": {
+          "title": "Chain",
           "type": "string"
         },
-        "eventName": {
-          "title": "Event  Name",
+        "contractAddress": {
+          "title": "Contract address",
+          "type": "string"
+        },
+        "dateOfMint": {
+          "format": "date",
+          "title": "Date of Mint",
           "type": "string"
         },
         "id": {
@@ -48,24 +52,8 @@
           "title": "Recipient DID",
           "type": "string"
         },
-        "place": {
-          "title": "Place",
-          "type": "string"
-        },
-        "projectName": {
-          "title": "Project Name",
-          "type": "string"
-        },
-        "sourceCodeUrl": {
-          "title": "Source Code Url",
-          "type": "string"
-        },
-        "teamName": {
-          "title": "Team Name",
-          "type": "string"
-        },
-        "usageLink": {
-          "title": "Usage Link",
+        "tokenStandard": {
+          "title": "Token Standard",
           "type": "string"
         }
       },
@@ -130,6 +118,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Proof of Hack Credential",
+  "title": "Proof of Mint Credential",
   "type": "object"
 }

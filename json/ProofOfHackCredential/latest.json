@@ -49,27 +49,22 @@
           "type": "string"
         },
         "place": {
-          "format": "uri",
           "title": "Place",
           "type": "string"
         },
         "projectName": {
-          "format": "uri",
           "title": "Project Name",
           "type": "string"
         },
         "sourceCodeUrl": {
-          "format": "uri",
           "title": "Source Code Url",
           "type": "string"
         },
         "teamName": {
-          "format": "uri",
           "title": "Team Name",
           "type": "string"
         },
         "usageLink": {
-          "format": "uri",
           "title": "Usage Link",
           "type": "string"
         }
