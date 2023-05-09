@@ -15,7 +15,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noFallthroughCasesInSwitch": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "declarationMap": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.test.ts"]

@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/StarSignCredential/1-0-0.json",
 
-  title: "Star Sign",
+  title: "Star Sign Credential",
   description: "Self attested credential to your Star/Astrological sign",
 
   properties: {

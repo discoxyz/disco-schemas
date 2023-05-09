@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/ProofOfHackCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
+  "description": "Proof of Hack recognizes the holder for participating in a Hackathon.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,40 +34,46 @@
     },
     "credentialSubject": {
       "properties": {
-        "expiration": {
+        "eventDate": {
           "format": "date",
-          "title": "Expiration",
+          "title": "Event Date",
+          "type": "string"
+        },
+        "eventName": {
+          "title": "Event  Name",
           "type": "string"
         },
         "id": {
           "format": "uri",
-          "title": "Member DID",
+          "title": "Recipient DID",
           "type": "string"
         },
-        "memberId": {
-          "title": "Member ID",
+        "place": {
+          "title": "Place",
           "type": "string"
         },
-        "membershipDescription": {
-          "title": "Membership Description",
+        "projectName": {
+          "title": "Project Name",
           "type": "string"
         },
-        "membershipLevel": {
-          "title": "Membership Level",
+        "sourceCodeUrl": {
+          "title": "Source Code Url",
           "type": "string"
         },
-        "membershipType": {
-          "title": "Membership Type",
+        "teamName": {
+          "title": "Team Name",
           "type": "string"
         },
-        "organization": {
-          "title": "Organization Name",
+        "usageLink": {
+          "title": "Usage Link",
           "type": "string"
         }
       },
       "required": [
         "id",
-        "organization"
+        "eventName",
+        "eventDate",
+        "projectName"
       ],
       "type": "object"
     },
@@ -124,6 +130,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Membership Credential",
+  "title": "Proof of Hack Credential",
   "type": "object"
 }

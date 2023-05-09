@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GuestSpeakerCredential/1-0-0.json",
 
-  title: "Guest Speaker",
+  title: "Guest Speaker Credential",
   description:
     "This credential attests that the holder has spoken publicly. The signer vouches for their voice, and will be for guests of podcasts, classes, and events",
 

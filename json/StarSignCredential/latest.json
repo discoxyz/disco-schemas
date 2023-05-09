@@ -116,6 +116,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Star Sign",
+  "title": "Star Sign Credential",
   "type": "object"
 }

@@ -106,6 +106,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Dark Mode Preference",
+  "title": "Dark Mode Preference Credential",
   "type": "object"
 }

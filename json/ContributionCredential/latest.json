@@ -126,6 +126,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Contribution",
+  "title": "Contribution Credential",
   "type": "object"
 }

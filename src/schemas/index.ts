@@ -19,6 +19,8 @@ import PraiseCredential from "./PraiseCredential/latest";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest";
 import ProfileCredential from "./ProfileCredential/latest";
 import PronounsCredential from "./PronounsCredential/latest";
+import ProofOfHackCredential from "./ProofOfHackCredential/latest";
+import ProofOfMintCredential from "./ProofOfMintCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
@@ -45,6 +47,8 @@ export {
   PrimaryLanguageCredential,
   ProfileCredential,
   PronounsCredential,
+  ProofOfHackCredential,
+  ProofOfMintCredential,
   SnapsCredential,
   StarSignCredential,
   TshirtSizeCredential,
