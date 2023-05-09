@@ -8,7 +8,7 @@ import DarkModePrefCredential from "./DarkModePrefCredential/latest";
 import EthDenverCredential from "./EthDenverCredential/latest";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
 import GMCredential from "./GMCredential/latest";
-import ImpactNetworkCredential from "./InvestorCredential/latest";
+import ImpactNetworkCredential from "./ImpactNetworkCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
 import MembershipCredential from "./MembershipCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";

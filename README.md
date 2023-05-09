@@ -94,7 +94,7 @@ To add a new schema:
 1. Copy a schema version from another schema into this folder. Call it `1-0-0.ts` for the first version
 1. Update the schema! Make sure to change the following values:
     - `$id` - replace the schema name and version at the end of this URL with the folder name and version number
-    - `title` (required) and `description` (optional)
+    - `title` (required) and `description` (required)
     - `credentialSubject` your schema goes here!
 1. Add to the schema to `src/schemas/index.ts`
     - Import and export the schema
@@ -111,7 +111,9 @@ To add a new version:
 1. Change the `$id` URL to match the new version number
 1. Make your changes
 1. Make sure to run `yarn generate` before using the schema or committing changes
-1. Make sure to increment `package.json` version before publishing the package
+2. `package.json` version will update on merge depending on the commit log
+    - minor `chore: Description` , `fix: Description`
+    - major `feat: Description`
     - While schemas are permanently available at versioned .json URLs, schemas exported by this module in code always refer to the latest version, so apps importing any changed schemas will get the updates when they update `disco-schemas`. As such, make sure to follow [SemVer](https://semver.org/) conventions when updating `package.json` version number.
 
 ### Notes
