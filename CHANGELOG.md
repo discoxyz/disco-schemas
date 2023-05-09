@@ -1,6 +1,6 @@
-## [1.4.0](https://github.com/discoxyz/disco-schemas/compare/v1.3.0...v1.4.0) (2023-05-09)
+## [1.4.1](https://github.com/discoxyz/disco-schemas/compare/v1.4.0...v1.4.1) (2023-05-09)
 
 
-### Features
+### Bug Fixes
 
-* Impact network credential ([b3be05c](https://github.com/discoxyz/disco-schemas/commit/b3be05ce2be424f696a65e7be79232dec2db4932))
+* ImpactNetworkCredential export ([220f577](https://github.com/discoxyz/disco-schemas/commit/220f577d6e643586ae5fdff3d7cbc3dd761beb61))
