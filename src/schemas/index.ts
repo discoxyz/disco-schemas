@@ -23,6 +23,7 @@ import ProofOfHackCredential from "./ProofOfHackCredential/latest";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
+import StreakCredential from "./StreakCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
 
@@ -51,6 +52,7 @@ export {
   ProofOfMintCredential,
   SnapsCredential,
   StarSignCredential,
+  StreakCredential,
   TshirtSizeCredential,
   VouchCredential,
 };
