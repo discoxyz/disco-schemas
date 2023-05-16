@@ -58,10 +58,7 @@
         }
       },
       "required": [
-        "id",
-        "eventName",
-        "eventDate",
-        "projectName"
+        "id"
       ],
       "type": "object"
     },

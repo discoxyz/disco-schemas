@@ -15,7 +15,7 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "eventName", "eventDate", "projectName"],
+      required: ["id"],
       properties: {
         id: { title: "Recipient DID", type: "string", format: "uri" },
         contractAddress: { title: "Contract address", type: "string" },
