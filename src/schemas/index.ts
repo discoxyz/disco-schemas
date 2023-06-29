@@ -4,7 +4,7 @@ import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 import ContributionCredential from "./ContributionCredential/latest";
-import CredProtocolCredential from "./CredProtocolCredential/latest";
+import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
 import EthDenverCredential from "./EthDenverCredential/latest";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
@@ -34,7 +34,7 @@ export {
   BetaUserCredential,
   CertificateOfCompletionCredential,
   ContributionCredential,
-  CredProtocolCredential,
+  DigitalAssetCreditScoreCredential,
   DarkModePrefCredential,
   EthDenverCredential,
   GuestSpeakerCredential,
