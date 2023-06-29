@@ -42,7 +42,7 @@
           "title": "Value",
           "type": "integer"
         },
-        "value_rating": {
+        "valueRating": {
           "title": "Value Rating",
           "type": "integer"
         }
@@ -50,7 +50,7 @@
       "required": [
         "id",
         "value",
-        "value_rating"
+        "valueRating"
       ],
       "type": "object"
     },
