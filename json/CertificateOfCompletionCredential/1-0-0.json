@@ -52,8 +52,7 @@
         }
       },
       "required": [
-        "id",
-        "twitterHandle"
+        "id"
       ],
       "type": "object"
     },
