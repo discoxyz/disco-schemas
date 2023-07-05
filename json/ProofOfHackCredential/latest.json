@@ -72,8 +72,7 @@
       "required": [
         "id",
         "eventName",
-        "eventDate",
-        "projectName"
+        "eventDate"
       ],
       "type": "object"
     },

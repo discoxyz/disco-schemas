@@ -16,7 +16,7 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "twitterHandle"],
+      required: ["id"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
         twitterHandle: { title: "Twitter Handle", type: "string" },
