@@ -40,11 +40,11 @@
         },
         "value": {
           "title": "Value",
-          "type": "integer"
+          "type": "string"
         },
         "valueRating": {
           "title": "Value Rating",
-          "type": "integer"
+          "type": "string"
         }
       },
       "required": [

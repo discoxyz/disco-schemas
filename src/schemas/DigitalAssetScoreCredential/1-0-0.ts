@@ -18,8 +18,8 @@ export default {
       required: ["id", "value", "valueRating"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
-        value: { title: "Value", type: "integer" },
-        valueRating: { title: "Value Rating", type: "integer" },
+        value: { title: "Value", type: "string" },
+        valueRating: { title: "Value Rating", type: "string" },
       },
     },
   },
