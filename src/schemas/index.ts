@@ -22,6 +22,7 @@ import ProfileCredential from "./ProfileCredential/latest";
 import PronounsCredential from "./PronounsCredential/latest";
 import ProofOfHackCredential from "./ProofOfHackCredential/latest";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest";
+import RecommendationCredential from "./RecommendationCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import StreakCredential from "./StreakCredential/latest";
@@ -52,6 +53,7 @@ export {
   PronounsCredential,
   ProofOfHackCredential,
   ProofOfMintCredential,
+  RecommendationCredential,
   SnapsCredential,
   StarSignCredential,
   StreakCredential,
