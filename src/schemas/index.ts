@@ -24,6 +24,7 @@ import ProofOfHackCredential from "./ProofOfHackCredential/latest";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest";
 import RecommendationCredential from "./RecommendationCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
+import SpotifyListenerCredential from "./SpotifyListenerCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import StreakCredential from "./StreakCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
@@ -55,6 +56,7 @@ export {
   ProofOfMintCredential,
   RecommendationCredential,
   SnapsCredential,
+  SpotifyListenerCredential,
   StarSignCredential,
   StreakCredential,
   TshirtSizeCredential,
