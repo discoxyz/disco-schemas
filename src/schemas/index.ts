@@ -23,9 +23,13 @@ import PronounsCredential from "./PronounsCredential/latest";
 import ProofOfHackCredential from "./ProofOfHackCredential/latest";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest";
 import RecommendationCredential from "./RecommendationCredential/latest";
+import SharedTopArtistCredential from "./SharedTopArtistCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
+import SpotifyListenerCredential from "./SpotifyListenerCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import StreakCredential from "./StreakCredential/latest";
+import TopArtistsCredential from "./TopArtistsCredential/latest";
+import TopSongsCredential from "./TopSongsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
 
@@ -54,9 +58,13 @@ export {
   ProofOfHackCredential,
   ProofOfMintCredential,
   RecommendationCredential,
+  SharedTopArtistCredential,
   SnapsCredential,
+  SpotifyListenerCredential,
   StarSignCredential,
   StreakCredential,
+  TopArtistsCredential,
+  TopSongsCredential,
   TshirtSizeCredential,
   VouchCredential,
 };
