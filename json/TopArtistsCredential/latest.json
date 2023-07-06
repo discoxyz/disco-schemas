@@ -130,6 +130,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Spotify Listener Credential",
+  "title": "Top Artists Credential",
   "type": "object"
 }

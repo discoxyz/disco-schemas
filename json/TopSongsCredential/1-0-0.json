@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TopArtistsCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TopSongsCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Top Artists",
+  "description": "Top Songs. You listened to these songs most over the time span of this credential.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -44,16 +44,28 @@
           "title": "Recipient DID",
           "type": "string"
         },
-        "mostListenedArtist1": {
-          "title": "Most Listened Artist 1",
+        "mostListenedSong1": {
+          "title": "Most Listened Song 1",
           "type": "string"
         },
-        "mostListenedArtist2": {
-          "title": "Most Listened Artist 2",
+        "mostListenedSong1Artist": {
+          "title": "Most Listened Song 1 Artist",
           "type": "string"
         },
-        "mostListenedArtist3": {
-          "title": "Most Listened Artist 3",
+        "mostListenedSong2": {
+          "title": "Most Listened Song 2",
+          "type": "string"
+        },
+        "mostListenedSong2Artist": {
+          "title": "Most Listened Song 2 Artist",
+          "type": "string"
+        },
+        "mostListenedSong3": {
+          "title": "Most Listened Song 3",
+          "type": "string"
+        },
+        "mostListenedSong3Artist": {
+          "title": "Most Listened Song 3 Artist",
           "type": "string"
         },
         "spotifyUsername": {
@@ -71,9 +83,12 @@
         "spotifyUsername",
         "startDate",
         "endDate",
-        "mostListenedArtist1",
-        "mostListenedArtist2",
-        "mostListenedArtist3"
+        "mostListenedSong1",
+        "mostListenedSong1Artist",
+        "mostListenedSong2",
+        "mostListenedSong2Artist",
+        "mostListenedSong3",
+        "mostListenedSong3Artist"
       ],
       "type": "object"
     },
@@ -130,6 +145,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Top Artists Credential",
+  "title": "Top Songs Credential",
   "type": "object"
 }

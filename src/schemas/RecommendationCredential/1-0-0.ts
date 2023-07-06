@@ -8,8 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/RecommendationCredential/1-0-0.json",
 
   title: "Recommendation Credential",
-  description:
-    "Sending over someone who passes the vibe check.",
+  description: "Sending over someone who passes the vibe check.",
 
   properties: {
     ...BaseVerifiableCredential.properties,
@@ -24,12 +23,9 @@ export default {
         recommendationType: {
           type: "string",
           title: "I think you should",
-          enum: [
-            "Be Friends",
-            "Work Together",
-            "Know About"
-          ],
-        },},
+          enum: ["Be Friends", "Work Together", "Know About"],
+        },
+      },
     },
   },
 } as JSONSchema7;

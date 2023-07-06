@@ -82,9 +82,7 @@ export async function fetchJsonSchema(schemaUrl: string): Promise<JSONSchema7> {
     const responseIsJson = res.headers.get("content-type")?.indexOf("application/json") === 0;
     return responseIsJson ? await res.json() : JSON.parse(await res.text());
   } catch (err: any) {
-    throw Error(
-      `Failed to load JSON Schema from ${schemaUrl}, could not get or parse JSON response: ${err.message}`,
-    );
+    throw Error(`Failed to load JSON Schema from ${schemaUrl}, could not get or parse JSON response: ${err.message}`);
   }
 }
 

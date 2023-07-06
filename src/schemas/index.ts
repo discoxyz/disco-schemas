@@ -28,6 +28,7 @@ import SpotifyListenerCredential from "./SpotifyListenerCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
 import StreakCredential from "./StreakCredential/latest";
 import TopArtistsCredential from "./TopArtistsCredential/latest";
+import TopSongsCredential from "./TopSongsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
 
@@ -61,6 +62,7 @@ export {
   StarSignCredential,
   StreakCredential,
   TopArtistsCredential,
+  TopSongsCredential,
   TshirtSizeCredential,
   VouchCredential,
 };

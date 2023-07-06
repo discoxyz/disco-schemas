@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/DigitalAssetScoreCredential/1-0-0.json",
 
   title: "Digital Asset Credit Score",
-  description: "CredProtocol.com's Digital Asset Credit Score is a decentralized credit score that quantifies lending risk at scale, bringing trust and transparency to web3.",
+  description:
+    "CredProtocol.com's Digital Asset Credit Score is a decentralized credit score that quantifies lending risk at scale, bringing trust and transparency to web3.",
 
   properties: {
     ...BaseVerifiableCredential.properties,

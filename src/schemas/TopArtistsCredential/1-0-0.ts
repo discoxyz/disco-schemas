@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TopArtistsCredential/1-0-0.json",
 
-  title: "Spotify Listener Credential",
+  title: "Top Artists Credential",
   description: "Top Artists",
 
   properties: {
@@ -15,7 +15,15 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "spotifyUsername", "startDate", "endDate", "mostListenedArtist1", "mostListenedArtist2", "mostListenedArtist3"],
+      required: [
+        "id",
+        "spotifyUsername",
+        "startDate",
+        "endDate",
+        "mostListenedArtist1",
+        "mostListenedArtist2",
+        "mostListenedArtist3",
+      ],
       properties: {
         id: { title: "Recipient DID", type: "string", format: "uri" },
         spotifyUsername: { title: "Spotify Username", type: "string" },
