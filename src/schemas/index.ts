@@ -23,6 +23,7 @@ import PronounsCredential from "./PronounsCredential/latest";
 import ProofOfHackCredential from "./ProofOfHackCredential/latest";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest";
 import RecommendationCredential from "./RecommendationCredential/latest";
+import SharedTopArtistCredential from "./SharedTopArtistCredential/latest";
 import SnapsCredential from "./SnapsCredential/latest";
 import SpotifyListenerCredential from "./SpotifyListenerCredential/latest";
 import StarSignCredential from "./StarSignCredential/latest";
@@ -57,6 +58,7 @@ export {
   ProofOfHackCredential,
   ProofOfMintCredential,
   RecommendationCredential,
+  SharedTopArtistCredential,
   SnapsCredential,
   SpotifyListenerCredential,
   StarSignCredential,
