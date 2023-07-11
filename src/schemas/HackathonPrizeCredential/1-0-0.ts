@@ -18,11 +18,11 @@ export default {
       required: ["id"],
       properties: {
         id: { title: "Recipient DID", type: "string", format: "uri" },
-        eventName: { title: "Event  Name", type: "string" },
+        eventName: { title: "Event Name", type: "string" },
         eventDate: { title: "Event Date", type: "string", format: "date" },
         track: { title: "Track/Category", type: "string"},
         bounty: { title: "Bounty", type: "string"},
-        Prize: { title: "Prize", type: "string"},
+        prize: { title: "Prize", type: "string"},
       },
     },
   },

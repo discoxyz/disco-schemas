@@ -34,10 +34,6 @@
     },
     "credentialSubject": {
       "properties": {
-        "Prize": {
-          "title": "Prize",
-          "type": "string"
-        },
         "bounty": {
           "title": "Bounty",
           "type": "string"
@@ -48,12 +44,16 @@
           "type": "string"
         },
         "eventName": {
-          "title": "Event  Name",
+          "title": "Event Name",
           "type": "string"
         },
         "id": {
           "format": "uri",
           "title": "Recipient DID",
+          "type": "string"
+        },
+        "prize": {
+          "title": "Prize",
           "type": "string"
         },
         "track": {
