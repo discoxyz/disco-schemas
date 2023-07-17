@@ -1,5 +1,7 @@
 /* AttendanceCredential and KudosCredential have been deprecated for business reasons */
+/* AttendanceCredential is exported to sort existing ones (like Eiffel Disco)*/
 import AccountLinkageCredential from "./AccountLinkageCredential/latest";
+import AttendendanceCredential from "./AttendanceCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
@@ -35,6 +37,7 @@ import VouchCredential from "./VouchCredential/latest";
 
 export {
   AccountLinkageCredential,
+  AttendendanceCredential,
   BaseVerifiableCredential,
   BetaUserCredential,
   CertificateOfCompletionCredential,
