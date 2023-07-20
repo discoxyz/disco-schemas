@@ -9,6 +9,7 @@ import ContributionCredential from "./ContributionCredential/latest";
 import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
 import EthDenverCredential from "./EthDenverCredential/latest";
+import GitcoinPassportScoreCredential from "./GitcoinPassportScoreCredential/latest"
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
 import GMCredential from "./GMCredential/latest";
 import HackathonPrizeCredential from "./HackathonPrizeCredential/latest"
@@ -47,6 +48,7 @@ export {
   DarkModePrefCredential,
   EthDenverCredential,
   GuestSpeakerCredential,
+  GitcoinPassportScoreCredential,
   GMCredential,
   HackathonPrizeCredential,
   ImpactNetworkCredential,
