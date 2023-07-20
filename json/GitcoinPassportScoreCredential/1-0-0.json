@@ -38,7 +38,7 @@
           "title": "Recipient DID",
           "type": "string"
         },
-        "last_generated": {
+        "lastGenerated": {
           "format": "date-time",
           "title": "Score Generated Timestamp",
           "type": "string"
@@ -47,7 +47,7 @@
           "title": "Score",
           "type": "string"
         },
-        "scorer_id": {
+        "scorerId": {
           "title": "Scorer ID",
           "type": "string"
         }

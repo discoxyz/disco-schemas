@@ -19,8 +19,8 @@ export default {
       properties: {
         id: { title: "Recipient DID", type: "string" },
         score: { title: "Score", type: "string" },
-        scorer_id: { title: "Scorer ID", type: "string" },
-        last_generated: { title: "Score Generated Timestamp", type: "string", format: "date-time" },
+        scorerId: { title: "Scorer ID", type: "string" },
+        lastGenerated: { title: "Score Generated Timestamp", type: "string", format: "date-time" },
       },
     },
   },
