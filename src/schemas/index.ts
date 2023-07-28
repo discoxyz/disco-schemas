@@ -4,6 +4,7 @@ import AccountLinkageCredential from "./AccountLinkageCredential/latest";
 import AttendanceCredential from "./AttendanceCredential/latest";
 import BaseVerifiableCredential from "./BaseVerifiableCredential/latest";
 import BetaUserCredential from "./BetaUserCredential/latest";
+import BookmarkCredential from "./BookmarkCredential/latest";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest";
 import ContributionCredential from "./ContributionCredential/latest";
 import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest";
@@ -42,6 +43,7 @@ export {
   AttendanceCredential,
   BaseVerifiableCredential,
   BetaUserCredential,
+  BookmarkCredential,
   CertificateOfCompletionCredential,
   ContributionCredential,
   DigitalAssetCreditScoreCredential,
