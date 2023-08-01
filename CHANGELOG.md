@@ -1,6 +1,6 @@
-## [1.9.0](https://github.com/discoxyz/disco-schemas/compare/v1.8.0...v1.9.0) (2023-07-28)
+## [1.10.0](https://github.com/discoxyz/disco-schemas/compare/v1.9.0...v1.10.0) (2023-08-01)
 
 
 ### Features
 
-* Added Bookmark Credential 1.0.0 ([5d9f6ab](https://github.com/discoxyz/disco-schemas/commit/5d9f6ab4ecfce82334602e8a3088aae99ae27d31))
+* New schemas ([4c53879](https://github.com/discoxyz/disco-schemas/commit/4c538796a4422d654730d8c45c00b8eb75e4eb3e))
