@@ -9,6 +9,7 @@ import CertificateOfCompletionCredential from "./CertificateOfCompletionCredenti
 import ContributionCredential from "./ContributionCredential/latest";
 import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest";
+import EighteenPlusCredential from "./EighteenPlusCredential/latest";
 import EthDenverCredential from "./EthDenverCredential/latest";
 import GitcoinPassportScoreCredential from "./GitcoinPassportScoreCredential/latest"
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest";
@@ -16,6 +17,7 @@ import GMCredential from "./GMCredential/latest";
 import HackathonPrizeCredential from "./HackathonPrizeCredential/latest"
 import ImpactNetworkCredential from "./ImpactNetworkCredential/latest";
 import InvestorCredential from "./InvestorCredential/latest";
+import KYCCredential from "./KYCCredential/latest";
 import MembershipCredential from "./MembershipCredential/latest";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest";
@@ -36,6 +38,7 @@ import StreakCredential from "./StreakCredential/latest";
 import TopArtistsCredential from "./TopArtistsCredential/latest";
 import TopSongsCredential from "./TopSongsCredential/latest";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest";
+import USAIndividualAccreditedInvestorCredential from "./USAIndividualAccreditedInvestorCredential/latest";
 import VouchCredential from "./VouchCredential/latest";
 
 export {
@@ -48,6 +51,7 @@ export {
   ContributionCredential,
   DigitalAssetCreditScoreCredential,
   DarkModePrefCredential,
+  EighteenPlusCredential,
   EthDenverCredential,
   GuestSpeakerCredential,
   GitcoinPassportScoreCredential,
@@ -55,6 +59,7 @@ export {
   HackathonPrizeCredential,
   ImpactNetworkCredential,
   InvestorCredential,
+  KYCCredential,
   MembershipCredential,
   OfficialDisconautCredential,
   OGTwitterVerificationCredential,
@@ -75,5 +80,6 @@ export {
   TopArtistsCredential,
   TopSongsCredential,
   TshirtSizeCredential,
+  USAIndividualAccreditedInvestorCredential,
   VouchCredential,
 };
