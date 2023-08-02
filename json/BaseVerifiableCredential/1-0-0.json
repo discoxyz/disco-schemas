@@ -1,97 +1,95 @@
 {
-  "default": {
-    "properties": {
-      "@context": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "array"
-          },
-          {
-            "type": "object"
-          }
-        ]
-      },
-      "credentialSchema": {
-        "properties": {
-          "id": {
-            "format": "uri",
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          }
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "required": [
-          "id",
-          "type"
-        ],
-        "type": "object"
-      },
-      "credentialSubject": {
-        "properties": {
-          "id": {
-            "format": "uri",
-            "type": "string"
-          }
+        {
+          "type": "array"
         },
-        "type": "object"
-      },
-      "expirationDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "id": {
-        "format": "uri",
-        "type": "string"
-      },
-      "issuanceDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "issuer": {
-        "anyOf": [
-          {
-            "format": "uri",
-            "type": "string"
-          },
-          {
-            "properties": {
-              "id": {
-                "format": "uri",
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        ]
-      },
-      "type": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          }
-        ]
-      }
+        {
+          "type": "object"
+        }
+      ]
     },
-    "required": [
-      "@context",
-      "type",
-      "issuer",
-      "issuanceDate",
-      "credentialSubject"
-    ],
-    "type": "object"
-  }
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "type": "object"
 }

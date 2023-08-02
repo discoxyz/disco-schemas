@@ -1,129 +1,127 @@
 {
-  "default": {
-    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SharedTopArtistCredential/1-0-0.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Shared Top Artist. You both love listening to this artist.",
-    "properties": {
-      "@context": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "array"
-          },
-          {
-            "type": "object"
-          }
-        ]
-      },
-      "credentialSchema": {
-        "properties": {
-          "id": {
-            "format": "uri",
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          }
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SharedTopArtistCredential/1-0-0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Shared Top Artist. You both love listening to this artist.",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "required": [
-          "id",
-          "type"
-        ],
-        "type": "object"
-      },
-      "credentialSubject": {
-        "properties": {
-          "artist": {
-            "title": "Artist",
-            "type": "string"
-          },
-          "artistLink": {
-            "title": "Artist Spotify Link",
-            "type": "string"
-          },
-          "friendsDid": {
-            "title": "Friend's DID",
-            "type": "string"
-          },
-          "friendsSpotifyUsername": {
-            "title": "Friend's Spotify Username",
-            "type": "string"
-          },
-          "id": {
-            "format": "uri",
-            "title": "Recipient DID",
-            "type": "string"
-          },
-          "spotifyUsername": {
-            "title": "Spotify Username",
-            "type": "string"
-          }
+        {
+          "type": "array"
         },
-        "required": [
-          "id",
-          "spotifyUsername",
-          "friendsDid",
-          "friendsSpotifyUsername",
-          "artist"
-        ],
-        "type": "object"
-      },
-      "expirationDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "id": {
-        "format": "uri",
-        "type": "string"
-      },
-      "issuanceDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "issuer": {
-        "anyOf": [
-          {
-            "format": "uri",
-            "type": "string"
-          },
-          {
-            "properties": {
-              "id": {
-                "format": "uri",
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        ]
-      },
-      "type": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          }
-        ]
-      }
+        {
+          "type": "object"
+        }
+      ]
     },
-    "required": [
-      "@context",
-      "type",
-      "issuer",
-      "issuanceDate",
-      "credentialSubject"
-    ],
-    "title": "Shared Top Artist Credential",
-    "type": "object"
-  }
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "artist": {
+          "title": "Artist",
+          "type": "string"
+        },
+        "artistLink": {
+          "title": "Artist Spotify Link",
+          "type": "string"
+        },
+        "friendsDid": {
+          "title": "Friend's DID",
+          "type": "string"
+        },
+        "friendsSpotifyUsername": {
+          "title": "Friend's Spotify Username",
+          "type": "string"
+        },
+        "id": {
+          "format": "uri",
+          "title": "Recipient DID",
+          "type": "string"
+        },
+        "spotifyUsername": {
+          "title": "Spotify Username",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "spotifyUsername",
+        "friendsDid",
+        "friendsSpotifyUsername",
+        "artist"
+      ],
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "title": "Shared Top Artist Credential",
+  "type": "object"
 }
