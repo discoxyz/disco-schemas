@@ -15,10 +15,10 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id", "confimation"],
+      required: ["id", "confirmation"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
-        confirmation: {title: "Confirmation", type:"boolean"},
+        confirmation: { title: "I'm at least 18 years old", type: "boolean" },
       },
     },
   },
