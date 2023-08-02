@@ -1,116 +1,118 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/KYCCredential/1-0-0.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Verifies a customer's identity.",
-  "properties": {
-    "@context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
-      ]
-    },
-    "credentialSchema": {
-      "properties": {
-        "id": {
-          "format": "uri",
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ],
-      "type": "object"
-    },
-    "credentialSubject": {
-      "properties": {
-        "custom": {
-          "title": "Custom",
-          "type": "string"
-        },
-        "id": {
-          "format": "uri",
-          "title": "Recipient DID",
-          "type": "string"
-        },
-        "verified": {
-          "title": "Verified",
-          "type": "boolean"
-        },
-        "verifiedBy": {
-          "format": "uri",
-          "title": "Verified By",
-          "type": "string"
-        }
-      },
-      "required": [
-        "id"
-      ],
-      "type": "object"
-    },
-    "expirationDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "id": {
-      "format": "uri",
-      "type": "string"
-    },
-    "issuanceDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "issuer": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "properties": {
-            "id": {
-              "format": "uri",
-              "type": "string"
-            }
-          },
-          "required": [
-            "id"
-          ],
-          "type": "object"
-        }
-      ]
-    },
-    "type": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
+  "default": {
+    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/KYCCredential/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Verifies a customer's identity.",
+    "properties": {
+      "@context": {
+        "anyOf": [
+          {
             "type": "string"
           },
-          "type": "array"
-        }
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "credentialSubject"
-  ],
-  "title": "KYC Credential",
-  "type": "object"
+          {
+            "type": "array"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "credentialSchema": {
+        "properties": {
+          "id": {
+            "format": "uri",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "credentialSubject": {
+        "properties": {
+          "custom": {
+            "title": "Custom",
+            "type": "string"
+          },
+          "id": {
+            "format": "uri",
+            "title": "Recipient DID",
+            "type": "string"
+          },
+          "verified": {
+            "title": "Verified",
+            "type": "boolean"
+          },
+          "verifiedBy": {
+            "format": "uri",
+            "title": "Verified By",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "expirationDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "id": {
+        "format": "uri",
+        "type": "string"
+      },
+      "issuanceDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "issuer": {
+        "anyOf": [
+          {
+            "format": "uri",
+            "type": "string"
+          },
+          {
+            "properties": {
+              "id": {
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "credentialSubject"
+    ],
+    "title": "KYC Credential",
+    "type": "object"
+  }
 }
