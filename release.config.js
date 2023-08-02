@@ -13,6 +13,9 @@ module.exports = {
           { type: "chore", release: "patch" },
           { type: "refactor", release: "patch" },
         ],
+        parserOpts: {
+          noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
       },
     ],
     "@semantic-release/release-notes-generator",

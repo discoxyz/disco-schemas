@@ -1,10 +1,11 @@
 import { ValidateFunction } from "ajv";
-import "cross-fetch/polyfill";
+// import "cross-fetch/polyfill";
+import fetch from 'cross-fetch';
 import { JSONSchema7 } from "json-schema";
 
 import { v4 as uuidv4 } from "uuid";
-import { addSchemaToVc, convertToPascalCase, getNewAjv } from "./helpers";
-import { VC } from "./types";
+import { addSchemaToVc, convertToPascalCase, getNewAjv } from "./helpers.js";
+import { VC } from "./types.js";
 
 export async function validateVcAgainstSchema(
   vc: VC,

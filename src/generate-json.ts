@@ -31,7 +31,7 @@ const SCHEMAS_RELATIVE_DIR = "./schemas"; // relative to this script
 
       // unlike `fs`, `require` is relative to the script being run
       // eslint-disable-next-line @typescript-eslint/no-var-requires
-      const schema = require(`${SCHEMAS_RELATIVE_DIR}/${schemaName}/${version}`).default;
+      const schema = await import(`${SCHEMAS_RELATIVE_DIR}/${schemaName}/${version}.js`);
 
       if (schema.$id && !schema.$id.includes(schemaName)) {
         throw Error(

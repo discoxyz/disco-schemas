@@ -1,117 +1,119 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AttendanceCredential/1-0-0.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Attendance attests that the subject attended an event or gathering hosted by the issuer.",
-  "properties": {
-    "@context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
-      ]
-    },
-    "credentialSchema": {
-      "properties": {
-        "id": {
-          "format": "uri",
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ],
-      "type": "object"
-    },
-    "credentialSubject": {
-      "properties": {
-        "eventDate": {
-          "format": "date",
-          "title": "Event Date",
-          "type": "string"
-        },
-        "eventDescription": {
-          "title": "Event Description",
-          "type": "string"
-        },
-        "eventName": {
-          "title": "Event Name",
-          "type": "string"
-        },
-        "id": {
-          "format": "uri",
-          "title": "Member DID",
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "eventName"
-      ],
-      "type": "object"
-    },
-    "expirationDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "id": {
-      "format": "uri",
-      "type": "string"
-    },
-    "issuanceDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "issuer": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "properties": {
-            "id": {
-              "format": "uri",
-              "type": "string"
-            }
-          },
-          "required": [
-            "id"
-          ],
-          "type": "object"
-        }
-      ]
-    },
-    "type": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
+  "default": {
+    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AttendanceCredential/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Attendance attests that the subject attended an event or gathering hosted by the issuer.",
+    "properties": {
+      "@context": {
+        "anyOf": [
+          {
             "type": "string"
           },
-          "type": "array"
-        }
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "credentialSubject"
-  ],
-  "title": "Attendance Credential",
-  "type": "object"
+          {
+            "type": "array"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "credentialSchema": {
+        "properties": {
+          "id": {
+            "format": "uri",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "credentialSubject": {
+        "properties": {
+          "eventDate": {
+            "format": "date",
+            "title": "Event Date",
+            "type": "string"
+          },
+          "eventDescription": {
+            "title": "Event Description",
+            "type": "string"
+          },
+          "eventName": {
+            "title": "Event Name",
+            "type": "string"
+          },
+          "id": {
+            "format": "uri",
+            "title": "Member DID",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "eventName"
+        ],
+        "type": "object"
+      },
+      "expirationDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "id": {
+        "format": "uri",
+        "type": "string"
+      },
+      "issuanceDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "issuer": {
+        "anyOf": [
+          {
+            "format": "uri",
+            "type": "string"
+          },
+          {
+            "properties": {
+              "id": {
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "credentialSubject"
+    ],
+    "title": "Attendance Credential",
+    "type": "object"
+  }
 }

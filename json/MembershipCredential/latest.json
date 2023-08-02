@@ -1,129 +1,131 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
-  "properties": {
-    "@context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
-      ]
-    },
-    "credentialSchema": {
-      "properties": {
-        "id": {
-          "format": "uri",
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ],
-      "type": "object"
-    },
-    "credentialSubject": {
-      "properties": {
-        "expiration": {
-          "format": "date",
-          "title": "Expiration",
-          "type": "string"
-        },
-        "id": {
-          "format": "uri",
-          "title": "Member DID",
-          "type": "string"
-        },
-        "memberId": {
-          "title": "Member ID",
-          "type": "string"
-        },
-        "membershipDescription": {
-          "title": "Membership Description",
-          "type": "string"
-        },
-        "membershipLevel": {
-          "title": "Membership Level",
-          "type": "string"
-        },
-        "membershipType": {
-          "title": "Membership Type",
-          "type": "string"
-        },
-        "organization": {
-          "title": "Organization Name",
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "organization"
-      ],
-      "type": "object"
-    },
-    "expirationDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "id": {
-      "format": "uri",
-      "type": "string"
-    },
-    "issuanceDate": {
-      "format": "date-time",
-      "type": "string"
-    },
-    "issuer": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "properties": {
-            "id": {
-              "format": "uri",
-              "type": "string"
-            }
-          },
-          "required": [
-            "id"
-          ],
-          "type": "object"
-        }
-      ]
-    },
-    "type": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
+  "default": {
+    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
+    "properties": {
+      "@context": {
+        "anyOf": [
+          {
             "type": "string"
           },
-          "type": "array"
-        }
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "credentialSubject"
-  ],
-  "title": "Membership Credential",
-  "type": "object"
+          {
+            "type": "array"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "credentialSchema": {
+        "properties": {
+          "id": {
+            "format": "uri",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "credentialSubject": {
+        "properties": {
+          "expiration": {
+            "format": "date",
+            "title": "Expiration",
+            "type": "string"
+          },
+          "id": {
+            "format": "uri",
+            "title": "Member DID",
+            "type": "string"
+          },
+          "memberId": {
+            "title": "Member ID",
+            "type": "string"
+          },
+          "membershipDescription": {
+            "title": "Membership Description",
+            "type": "string"
+          },
+          "membershipLevel": {
+            "title": "Membership Level",
+            "type": "string"
+          },
+          "membershipType": {
+            "title": "Membership Type",
+            "type": "string"
+          },
+          "organization": {
+            "title": "Organization Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "organization"
+        ],
+        "type": "object"
+      },
+      "expirationDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "id": {
+        "format": "uri",
+        "type": "string"
+      },
+      "issuanceDate": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "issuer": {
+        "anyOf": [
+          {
+            "format": "uri",
+            "type": "string"
+          },
+          {
+            "properties": {
+              "id": {
+                "format": "uri",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ]
+      }
+    },
+    "required": [
+      "@context",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "credentialSubject"
+    ],
+    "title": "Membership Credential",
+    "type": "object"
+  }
 }

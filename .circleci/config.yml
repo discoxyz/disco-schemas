@@ -41,14 +41,14 @@ jobs:
             - node_modules
             - src
             - .eslintignore
-            - .eslintrc.js
+            - .eslintrc.cjs
             - .git
             - .gitignore
             - .prettierignore
             - .prettierrc.yaml
-            - babel.config.js
+            - babel.config.cjs
             - commitlint.config.js
-            - jest.config.js
+            - jest.config.cjs
             - package.json
             - release.config.js
             - tsconfig.json

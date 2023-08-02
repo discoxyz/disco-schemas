@@ -1,5 +1,5 @@
 import { JSONSchema7 } from "json-schema";
-import BaseVerifiableCredential from "../BaseVerifiableCredential/1-0-0";
+import BaseVerifiableCredential from "../BaseVerifiableCredential/1-0-0.js";
 
 export default {
   ...BaseVerifiableCredential,
