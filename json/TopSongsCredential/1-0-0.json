@@ -1,152 +1,150 @@
 {
-  "default": {
-    "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TopSongsCredential/1-0-0.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Top Songs. You listened to these songs most over the time span of this credential.",
-    "properties": {
-      "@context": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "array"
-          },
-          {
-            "type": "object"
-          }
-        ]
-      },
-      "credentialSchema": {
-        "properties": {
-          "id": {
-            "format": "uri",
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          }
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/TopSongsCredential/1-0-0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Top Songs. You listened to these songs most over the time span of this credential.",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "required": [
-          "id",
-          "type"
-        ],
-        "type": "object"
-      },
-      "credentialSubject": {
-        "properties": {
-          "endDate": {
-            "format": "date",
-            "title": "End Date",
-            "type": "string"
-          },
-          "id": {
-            "format": "uri",
-            "title": "Recipient DID",
-            "type": "string"
-          },
-          "mostListenedSong1": {
-            "title": "Most Listened Song 1",
-            "type": "string"
-          },
-          "mostListenedSong1Artist": {
-            "title": "Most Listened Song 1 Artist",
-            "type": "string"
-          },
-          "mostListenedSong2": {
-            "title": "Most Listened Song 2",
-            "type": "string"
-          },
-          "mostListenedSong2Artist": {
-            "title": "Most Listened Song 2 Artist",
-            "type": "string"
-          },
-          "mostListenedSong3": {
-            "title": "Most Listened Song 3",
-            "type": "string"
-          },
-          "mostListenedSong3Artist": {
-            "title": "Most Listened Song 3 Artist",
-            "type": "string"
-          },
-          "spotifyUsername": {
-            "title": "Spotify Username",
-            "type": "string"
-          },
-          "startDate": {
-            "format": "date",
-            "title": "Start Date",
-            "type": "string"
-          }
+        {
+          "type": "array"
         },
-        "required": [
-          "id",
-          "spotifyUsername",
-          "startDate",
-          "endDate",
-          "mostListenedSong1",
-          "mostListenedSong1Artist",
-          "mostListenedSong2",
-          "mostListenedSong2Artist",
-          "mostListenedSong3",
-          "mostListenedSong3Artist"
-        ],
-        "type": "object"
-      },
-      "expirationDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "id": {
-        "format": "uri",
-        "type": "string"
-      },
-      "issuanceDate": {
-        "format": "date-time",
-        "type": "string"
-      },
-      "issuer": {
-        "anyOf": [
-          {
-            "format": "uri",
-            "type": "string"
-          },
-          {
-            "properties": {
-              "id": {
-                "format": "uri",
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        ]
-      },
-      "type": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          }
-        ]
-      }
+        {
+          "type": "object"
+        }
+      ]
     },
-    "required": [
-      "@context",
-      "type",
-      "issuer",
-      "issuanceDate",
-      "credentialSubject"
-    ],
-    "title": "Top Songs Credential",
-    "type": "object"
-  }
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "endDate": {
+          "format": "date",
+          "title": "End Date",
+          "type": "string"
+        },
+        "id": {
+          "format": "uri",
+          "title": "Recipient DID",
+          "type": "string"
+        },
+        "mostListenedSong1": {
+          "title": "Most Listened Song 1",
+          "type": "string"
+        },
+        "mostListenedSong1Artist": {
+          "title": "Most Listened Song 1 Artist",
+          "type": "string"
+        },
+        "mostListenedSong2": {
+          "title": "Most Listened Song 2",
+          "type": "string"
+        },
+        "mostListenedSong2Artist": {
+          "title": "Most Listened Song 2 Artist",
+          "type": "string"
+        },
+        "mostListenedSong3": {
+          "title": "Most Listened Song 3",
+          "type": "string"
+        },
+        "mostListenedSong3Artist": {
+          "title": "Most Listened Song 3 Artist",
+          "type": "string"
+        },
+        "spotifyUsername": {
+          "title": "Spotify Username",
+          "type": "string"
+        },
+        "startDate": {
+          "format": "date",
+          "title": "Start Date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "spotifyUsername",
+        "startDate",
+        "endDate",
+        "mostListenedSong1",
+        "mostListenedSong1Artist",
+        "mostListenedSong2",
+        "mostListenedSong2Artist",
+        "mostListenedSong3",
+        "mostListenedSong3Artist"
+      ],
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "title": "Top Songs Credential",
+  "type": "object"
 }
