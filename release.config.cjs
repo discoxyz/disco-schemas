@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-export default {
+module.exports = {
   branches: [
     "main"
   ],
