@@ -4,7 +4,7 @@
   "author": "Disco",
   "homepage": "https://disco.xyz",
   "repository": "discoxyz/disco-schemas",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
