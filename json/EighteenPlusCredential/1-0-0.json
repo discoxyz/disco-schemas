@@ -35,7 +35,7 @@
     "credentialSubject": {
       "properties": {
         "confirmation": {
-          "title": "Confirmation",
+          "title": "I'm at least 18 years old",
           "type": "boolean"
         },
         "id": {
@@ -45,7 +45,7 @@
       },
       "required": [
         "id",
-        "confimation"
+        "confirmation"
       ],
       "type": "object"
     },
