@@ -50,7 +50,7 @@ jobs:
             - commitlint.config.js
             - jest.config.cjs
             - package.json
-            - release.config.js
+            - release.config.cjs
             - tsconfig.json
             - yarn.lock
       - slack/notify:
