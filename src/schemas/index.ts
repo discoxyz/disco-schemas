@@ -35,6 +35,8 @@ import SnapsCredential from "./SnapsCredential/latest.js";
 import SpotifyListenerCredential from "./SpotifyListenerCredential/latest.js";
 import StarSignCredential from "./StarSignCredential/latest.js";
 import StreakCredential from "./StreakCredential/latest.js";
+import StreaksCredential from "./StreaksCredential/latest.js";
+import TimedMintReceiptCredential from "./TimedMintReceiptCredential/latest.js";
 import TopArtistsCredential from "./TopArtistsCredential/latest.js";
 import TopSongsCredential from "./TopSongsCredential/latest.js";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest.js";
