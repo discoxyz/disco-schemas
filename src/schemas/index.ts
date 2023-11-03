@@ -7,6 +7,7 @@ import BetaUserCredential from "./BetaUserCredential/latest.js";
 import BookmarkCredential from "./BookmarkCredential/latest.js";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest.js";
 import ContributionCredential from "./ContributionCredential/latest.js";
+import CreativeWorkCredential from "./CreativeWorkCredential/latest.js";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest.js";
 import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest.js";
 import DiscoProCredential from "./DiscoProCredential/latest.js";
@@ -58,6 +59,7 @@ export {
   BookmarkCredential,
   CertificateOfCompletionCredential,
   ContributionCredential,
+  CreativeWorkCredential,
   DarkModePrefCredential,
   DigitalAssetCreditScoreCredential,
   DiscoProCredential,
