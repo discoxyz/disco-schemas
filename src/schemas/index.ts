@@ -7,8 +7,9 @@ import BetaUserCredential from "./BetaUserCredential/latest.js";
 import BookmarkCredential from "./BookmarkCredential/latest.js";
 import CertificateOfCompletionCredential from "./CertificateOfCompletionCredential/latest.js";
 import ContributionCredential from "./ContributionCredential/latest.js";
-import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest.js";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest.js";
+import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest.js";
+import DogPersonCredential from "./DogPersonCredential/latest.js";
 import EighteenPlusCredential from "./EighteenPlusCredential/latest.js";
 import EthDenverCredential from "./EthDenverCredential/latest.js";
 import GitcoinPassportScoreCredential from "./GitcoinPassportScoreCredential/latest.js"
@@ -52,8 +53,9 @@ export {
   BookmarkCredential,
   CertificateOfCompletionCredential,
   ContributionCredential,
-  DigitalAssetCreditScoreCredential,
   DarkModePrefCredential,
+  DigitalAssetCreditScoreCredential,
+  DogPersonCredential,
   EighteenPlusCredential,
   EthDenverCredential,
   GuestSpeakerCredential,
