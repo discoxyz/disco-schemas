@@ -9,6 +9,7 @@ import CertificateOfCompletionCredential from "./CertificateOfCompletionCredenti
 import ContributionCredential from "./ContributionCredential/latest.js";
 import DarkModePrefCredential from "./DarkModePrefCredential/latest.js";
 import DigitalAssetCreditScoreCredential from "./DigitalAssetScoreCredential/latest.js";
+import DiscoProCredential from "./DiscoProCredential/latest.js";
 import DogPersonCredential from "./DogPersonCredential/latest.js";
 import EighteenPlusCredential from "./EighteenPlusCredential/latest.js";
 import EthDenverCredential from "./EthDenverCredential/latest.js";
@@ -55,6 +56,7 @@ export {
   ContributionCredential,
   DarkModePrefCredential,
   DigitalAssetCreditScoreCredential,
+  DiscoProCredential,
   DogPersonCredential,
   EighteenPlusCredential,
   EthDenverCredential,
