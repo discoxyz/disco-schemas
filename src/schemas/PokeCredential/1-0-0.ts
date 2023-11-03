@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/PokeCredential/1-0-0.json",
 
   title: "Poke Credential",
-  description: "A poke is a way to say 'hello' to or show interest in a friend without the tedious process of crafting coherent sentences.",
+  description:
+    "A poke is a way to say 'hello' to or show interest in a friend without the tedious process of crafting coherent sentences.",
   properties: {
     ...BaseVerifiableCredential.properties,
 

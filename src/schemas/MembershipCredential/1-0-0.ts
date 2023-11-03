@@ -24,7 +24,6 @@ export default {
         membershipLevel: { title: "Membership Level", type: "string" },
         memberId: { title: "Member ID", type: "string" },
         membershipDescription: { title: "Membership Description", type: "string" },
-        expiration: { title: "Expiration", type: "string", format: "date" },
       },
     },
   },

@@ -36,6 +36,7 @@ import ProofOfMintCredential from "./ProofOfMintCredential/latest.js";
 import RecommendationCredential from "./RecommendationCredential/latest.js";
 import RelationshipStatusCredential from "./RelationshipStatusCredential/latest.js";
 import SharedTopArtistCredential from "./SharedTopArtistCredential/latest.js";
+import SmartContractDeploymentsCredential from "./SmartContractDeploymentsCredential/latest.js";
 import SnapsCredential from "./SnapsCredential/latest.js";
 import SpotifyListenerCredential from "./SpotifyListenerCredential/latest.js";
 import StarSignCredential from "./StarSignCredential/latest.js";
@@ -86,6 +87,7 @@ export {
   RecommendationCredential,
   RelationshipStatusCredential,
   SharedTopArtistCredential,
+  SmartContractDeploymentsCredential,
   SnapsCredential,
   SpotifyListenerCredential,
   StarSignCredential,
