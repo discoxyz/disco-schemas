@@ -8,8 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MetInRealLifeCredential/1-0-0.json",
 
   title: "Met In Real Life Credential",
-  description:
-    "We met in real life.",
+  description: "We met in real life.",
 
   properties: {
     ...BaseVerifiableCredential.properties,

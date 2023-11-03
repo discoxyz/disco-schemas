@@ -20,7 +20,7 @@ export default {
         id: { title: "Recipient DID", type: "string", format: "uri" },
         verified: { title: "Verified", type: "boolean" },
         verifiedBy: { title: "Verified By", type: "string", format: "uri" },
-        custom: {title: "Custom", type: "string"},
+        custom: { title: "Custom", type: "string" },
       },
     },
   },

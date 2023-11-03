@@ -1,6 +1,6 @@
 import { ValidateFunction } from "ajv";
 // import "cross-fetch/polyfill";
-import fetch from 'cross-fetch';
+import fetch from "cross-fetch";
 import { JSONSchema7 } from "json-schema";
 
 import { v4 as uuidv4 } from "uuid";

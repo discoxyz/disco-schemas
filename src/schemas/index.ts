@@ -13,10 +13,10 @@ import DiscoProCredential from "./DiscoProCredential/latest.js";
 import DogPersonCredential from "./DogPersonCredential/latest.js";
 import EighteenPlusCredential from "./EighteenPlusCredential/latest.js";
 import EthDenverCredential from "./EthDenverCredential/latest.js";
-import GitcoinPassportScoreCredential from "./GitcoinPassportScoreCredential/latest.js"
+import GitcoinPassportScoreCredential from "./GitcoinPassportScoreCredential/latest.js";
 import GuestSpeakerCredential from "./GuestSpeakerCredential/latest.js";
 import GMCredential from "./GMCredential/latest.js";
-import HackathonPrizeCredential from "./HackathonPrizeCredential/latest.js"
+import HackathonPrizeCredential from "./HackathonPrizeCredential/latest.js";
 import ImpactNetworkCredential from "./ImpactNetworkCredential/latest.js";
 import InvestorCredential from "./InvestorCredential/latest.js";
 import KYCCredential from "./KYCCredential/latest.js";
@@ -33,6 +33,7 @@ import PronounsCredential from "./PronounsCredential/latest.js";
 import ProofOfHackCredential from "./ProofOfHackCredential/latest.js";
 import ProofOfMintCredential from "./ProofOfMintCredential/latest.js";
 import RecommendationCredential from "./RecommendationCredential/latest.js";
+import RelationshipStatusCredential from "./RelationshipStatusCredential/latest.js";
 import SharedTopArtistCredential from "./SharedTopArtistCredential/latest.js";
 import SnapsCredential from "./SnapsCredential/latest.js";
 import SpotifyListenerCredential from "./SpotifyListenerCredential/latest.js";
@@ -80,6 +81,7 @@ export {
   ProofOfHackCredential,
   ProofOfMintCredential,
   RecommendationCredential,
+  RelationshipStatusCredential,
   SharedTopArtistCredential,
   SnapsCredential,
   SpotifyListenerCredential,

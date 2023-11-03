@@ -8,8 +8,7 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/BookmarkCredential/1-0-0.json",
 
   title: "Bookmark Credential",
-  description:
-    "GM, Reader. Collect this bookmark and stack it on your digital shelf.",
+  description: "GM, Reader. Collect this bookmark and stack it on your digital shelf.",
 
   properties: {
     ...BaseVerifiableCredential.properties,
