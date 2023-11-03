@@ -47,6 +47,7 @@ import TopSongsCredential from "./TopSongsCredential/latest.js";
 import TshirtSizeCredential from "./TshirtSizeCredential/latest.js";
 import USAIndividualAccreditedInvestorCredential from "./USAIndividualAccreditedInvestorCredential/latest.js";
 import VouchCredential from "./VouchCredential/latest.js";
+import WalletAgeCredential from "./WalletAgeCredential/latest.js";
 
 export {
   AccountLinkageCredential,
@@ -94,4 +95,5 @@ export {
   TshirtSizeCredential,
   USAIndividualAccreditedInvestorCredential,
   VouchCredential,
+  WalletAgeCredential,
 };
