@@ -1,0 +1,119 @@
+{
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MetInRealLifeCredential/1-0-0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "We met in real life.",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "credentialSubject": {
+      "properties": {
+        "event": {
+          "title": "Event",
+          "type": "string"
+        },
+        "id": {
+          "format": "uri",
+          "title": "Member DID",
+          "type": "string"
+        },
+        "identifier": {
+          "title": "Identifier (handle, email, link)",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "superEvent": {
+          "title": "SuperEvent (Conference, Festival or Gathering)",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "format": "uri",
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "properties": {
+            "id": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "credentialSubject"
+  ],
+  "title": "Met In Real Life Credential",
+  "type": "object"
+}

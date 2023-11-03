@@ -19,6 +19,7 @@ import ImpactNetworkCredential from "./ImpactNetworkCredential/latest.js";
 import InvestorCredential from "./InvestorCredential/latest.js";
 import KYCCredential from "./KYCCredential/latest.js";
 import MembershipCredential from "./MembershipCredential/latest.js";
+import MetInRealLifeCredential from "./MetInRealLifeCredential/latest.js";
 import OfficialDisconautCredential from "./OfficialDisconautCredential/latest.js";
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest.js";
 import OrganizationCredential from "./OrganizationCredential/latest.js";
@@ -63,6 +64,7 @@ export {
   InvestorCredential,
   KYCCredential,
   MembershipCredential,
+  MetInRealLifeCredential,
   OfficialDisconautCredential,
   OGTwitterVerificationCredential,
   OrganizationCredential,
