@@ -26,6 +26,7 @@ import OfficialDisconautCredential from "./OfficialDisconautCredential/latest.js
 import OGTwitterVerificationCredential from "./OGTwitterVerificationCredential/latest.js";
 import OrganizationCredential from "./OrganizationCredential/latest.js";
 import ParticipationCredential from "./ParticipationCredential/latest.js";
+import PokeCredential from "./PokeCredential/latest.js";
 import PraiseCredential from "./PraiseCredential/latest.js";
 import PrimaryLanguageCredential from "./PrimaryLanguageCredential/latest.js";
 import ProfileCredential from "./ProfileCredential/latest.js";
@@ -74,6 +75,7 @@ export {
   OGTwitterVerificationCredential,
   OrganizationCredential,
   ParticipationCredential,
+  PokeCredential,
   PraiseCredential,
   PrimaryLanguageCredential,
   ProfileCredential,
