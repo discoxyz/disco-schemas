@@ -110,6 +110,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Met IRL Credential",
+  "title": "Attested Met IRL Credential",
   "type": "object"
 }

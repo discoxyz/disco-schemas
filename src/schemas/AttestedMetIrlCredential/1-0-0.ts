@@ -7,7 +7,7 @@ export default {
   $schema: "http://json-schema.org/draft-07/schema#",
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AttestedMetIrlCredential/1-0-0.json",
 
-  title: "Met IRL Credential",
+  title: "Attested Met IRL Credential",
   description: "An attested met IRL credential",
 
   properties: {
