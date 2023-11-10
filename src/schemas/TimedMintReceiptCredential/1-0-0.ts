@@ -22,7 +22,7 @@ export default {
         publicationId: { title: "Publication ID", type: "string" },
         publicationName: { title: "Publication Name", type: "string" },
         timeOfMint: { title: "Time of Mint", type: "string", format: "date" },
-        rank: { title: "Rank", type: "integer"}
+        rank: { title: "Rank", type: "integer" },
       },
     },
   },

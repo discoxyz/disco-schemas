@@ -38,11 +38,6 @@
           "title": "Description and Notes",
           "type": "string"
         },
-        "expiration": {
-          "format": "date",
-          "title": "Expiration",
-          "type": "string"
-        },
         "id": {
           "format": "uri",
           "title": "Investor DID",

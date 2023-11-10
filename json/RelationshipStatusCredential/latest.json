@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/RelationshipStatusCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
+  "description": "Your relationship status",
   "properties": {
     "@context": {
       "anyOf": [
@@ -36,33 +36,30 @@
       "properties": {
         "id": {
           "format": "uri",
-          "title": "Member DID",
+          "title": "Recipient DID",
           "type": "string"
         },
-        "memberId": {
-          "title": "Member ID",
-          "type": "string"
-        },
-        "membershipDescription": {
-          "title": "Membership Description",
-          "type": "string"
-        },
-        "membershipLevel": {
-          "title": "Membership Level",
-          "type": "string"
-        },
-        "membershipType": {
-          "title": "Membership Type",
-          "type": "string"
-        },
-        "organization": {
-          "title": "Organization Name",
+        "relationshipStatus": {
+          "enum": [
+            "Single",
+            "In a Relationship",
+            "Engaged",
+            "Married",
+            "It's Complicated",
+            "Separated",
+            "Divorced",
+            "Widowed",
+            "In an Open Relationship",
+            "In a Civil Union",
+            "In a Domestic Partnership"
+          ],
+          "title": "Relationship Status",
           "type": "string"
         }
       },
       "required": [
         "id",
-        "organization"
+        "relationshipStatus"
       ],
       "type": "object"
     },
@@ -119,6 +116,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Membership Credential",
+  "title": "Relationship Status Credential",
   "type": "object"
 }

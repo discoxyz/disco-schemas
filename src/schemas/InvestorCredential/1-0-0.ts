@@ -20,7 +20,6 @@ export default {
         id: { title: "Investor DID", type: "string", format: "uri" },
         round: { title: "Round", type: "string" },
         description: { title: "Description and Notes", type: "string" },
-        expiration: { title: "Expiration", type: "string", format: "date" },
       },
     },
   },

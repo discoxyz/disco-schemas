@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GitcoinPassportScoreCredential/1-0-0.json",
 
   title: "Gitcoin Passport Score Credential",
-  description: "Gitcoin Passport is your citizenship pass for the decentralized internet. It enables you to collect verifiable credentials that prove your identity and trustworthiness without exposing personally identifying information",
+  description:
+    "Gitcoin Passport is your citizenship pass for the decentralized internet. It enables you to collect verifiable credentials that prove your identity and trustworthiness without exposing personally identifying information",
 
   properties: {
     ...BaseVerifiableCredential.properties,

@@ -3,26 +3,25 @@ import { Response } from "cross-fetch";
 import { AccountLinkageCredential } from "./schemas/index.js";
 import { EXAMPLE_VC } from "./helpers.js";
 
-jest.unstable_mockModule('cross-fetch', () => {
+jest.unstable_mockModule("cross-fetch", () => {
   const fetchFunc = jest.fn(async (url: string, opts: any = {}) => ({
     ok: true,
     json: async () => {
-      return { status: 200, body: EXAMPLE_VC.credentialSchema }
+      return { status: 200, body: EXAMPLE_VC.credentialSchema };
     },
-  }))
+  }));
   return {
     default: fetchFunc,
-  }
-})
-
+  };
+});
 
 const vc = EXAMPLE_VC;
 let validateVcAgainstSchema: any;
 let getAndValidateSchemaFromVc: any;
 
-beforeAll( async () => {
-  validateVcAgainstSchema = (await import("./validateVc.js")).validateVcAgainstSchema
-  getAndValidateSchemaFromVc = await (await import("./validateVc.js")).getAndValidateSchemaFromVc
+beforeAll(async () => {
+  validateVcAgainstSchema = (await import("./validateVc.js")).validateVcAgainstSchema;
+  getAndValidateSchemaFromVc = await (await import("./validateVc.js")).getAndValidateSchemaFromVc;
 });
 
 it("should validate VC against a schema", async () => {
@@ -48,8 +47,10 @@ it("should detect missing property from JSON Schema", async () => {
 });
 
 it("should validate VC by its credentialSchema property", async () => {
-  const fetch = await import("cross-fetch")
-  jest.spyOn(fetch, "default").mockImplementation(()=> { return Promise.resolve(new Response(JSON.stringify(AccountLinkageCredential), { status: 200 }))})
+  const fetch = await import("cross-fetch");
+  jest.spyOn(fetch, "default").mockImplementation(() => {
+    return Promise.resolve(new Response(JSON.stringify(AccountLinkageCredential), { status: 200 }));
+  });
 
   const { valid, errors, schema } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(true);
@@ -94,8 +95,10 @@ it("should error on missing `credentialSchema.id`", async () => {
 });
 
 it("should error on failure to fetch JSON Schema", async () => {
-  const fetch = await import("cross-fetch")
-  jest.spyOn(fetch, "default").mockImplementationOnce(()=> { return Promise.reject(Error("Nope"))})
+  const fetch = await import("cross-fetch");
+  jest.spyOn(fetch, "default").mockImplementationOnce(() => {
+    return Promise.reject(Error("Nope"));
+  });
 
   const { valid, errors } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(false);
@@ -103,8 +106,10 @@ it("should error on failure to fetch JSON Schema", async () => {
   expect(errors[0]).toMatch(/Failed to (load|fetch) JSON Schema/);
 });
 it("should error on non-200 response when fetching JSON Schema", async () => {
-  const fetch = await import("cross-fetch")
-  jest.spyOn(fetch, "default").mockImplementationOnce(()=> { return Promise.resolve(new Response(undefined, { status: 404 }))})
+  const fetch = await import("cross-fetch");
+  jest.spyOn(fetch, "default").mockImplementationOnce(() => {
+    return Promise.resolve(new Response(undefined, { status: 404 }));
+  });
 
   const { valid, errors } = await getAndValidateSchemaFromVc(vc);
   expect(valid).toBe(false);

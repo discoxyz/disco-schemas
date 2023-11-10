@@ -20,7 +20,6 @@ export default {
         organizationName: { title: "Organization Name", type: "string" },
         organizationType: { title: "Organization Type", type: "string" },
         organizationDescription: { title: "Description", type: "string" },
-        expiration: { title: "Expiration", type: "string", format: "date" },
       },
     },
   },

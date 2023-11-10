@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/CreativeWorkCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "General Membership attests that the subject is a member in good standing of the issuing organization or group.",
+  "description": "Creative Work",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,35 +34,54 @@
     },
     "credentialSubject": {
       "properties": {
+        "authorEns": {
+          "title": "ENS of artist",
+          "type": "string"
+        },
+        "authorName": {
+          "title": "Name of artist",
+          "type": "string"
+        },
+        "authorWebsite": {
+          "title": "Website of artist",
+          "type": "string"
+        },
+        "exhibition": {
+          "title": "Exhibition",
+          "type": "string"
+        },
         "id": {
-          "format": "uri",
-          "title": "Member DID",
+          "title": "Recipient DID",
           "type": "string"
         },
-        "memberId": {
-          "title": "Member ID",
+        "link": {
+          "title": "Link to Creative Work",
           "type": "string"
         },
-        "membershipDescription": {
-          "title": "Membership Description",
+        "material": {
+          "title": "Material",
           "type": "string"
         },
-        "membershipLevel": {
-          "title": "Membership Level",
+        "name": {
+          "title": "Name (of the creative work)",
           "type": "string"
         },
-        "membershipType": {
-          "title": "Membership Type",
-          "type": "string"
-        },
-        "organization": {
-          "title": "Organization Name",
+        "type": {
+          "enum": [
+            "Painting",
+            "Sculpture",
+            "NFT",
+            "Essay",
+            "Wearable",
+            "Accessory"
+          ],
+          "title": "Type of art",
           "type": "string"
         }
       },
       "required": [
         "id",
-        "organization"
+        "name"
       ],
       "type": "object"
     },
@@ -119,6 +138,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Membership Credential",
+  "title": "Creative Work Credential",
   "type": "object"
 }

@@ -5,11 +5,11 @@ export default {
   ...BaseVerifiableCredential,
 
   $schema: "http://json-schema.org/draft-07/schema#",
-  $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/KYCCredential/1-0-0.json",
+  $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/PokeCredential/1-0-0.json",
 
-  title: "KYC Credential",
-  description: "Verifies a customer's identity.",
-
+  title: "Poke Credential",
+  description:
+    "A poke is a way to say 'hello' to or show interest in a friend without the tedious process of crafting coherent sentences.",
   properties: {
     ...BaseVerifiableCredential.properties,
 
@@ -18,9 +18,6 @@ export default {
       required: ["id"],
       properties: {
         id: { title: "Recipient DID", type: "string", format: "uri" },
-        verified: { title: "Verified", type: "boolean" },
-        verifiedBy: { title: "Verified By", type: "string", format: "uri" },
-        custom: { title: "Custom", type: "string" },
       },
     },
   },
