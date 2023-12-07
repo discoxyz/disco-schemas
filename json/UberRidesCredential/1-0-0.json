@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/EighteenPlusCredential/1-0-0.json",
+  "$id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/UberRidesCredential/1-0-0.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Self attested credential to your age.",
+  "description": "ZK Proof credential enables you to get proof of your Uber rides without revealing your personal data.",
   "properties": {
     "@context": {
       "anyOf": [
@@ -34,18 +34,29 @@
     },
     "credentialSubject": {
       "properties": {
-        "confirmation": {
-          "title": "I'm at least 18 years old",
-          "type": "boolean"
+        "ProofType": {
+          "title": "Proof Type",
+          "type": "string"
+        },
+        "ProofValue": {
+          "title": "Proof Value",
+          "type": "string"
         },
         "id": {
           "title": "Recipient DID",
           "type": "string"
+        },
+        "numberOfRides": {
+          "title": "Number of rides",
+          "type": "string"
+        },
+        "userId": {
+          "title": "ID",
+          "type": "string"
         }
       },
       "required": [
-        "id",
-        "confirmation"
+        "id"
       ],
       "type": "object"
     },
@@ -102,6 +113,6 @@
     "issuanceDate",
     "credentialSubject"
   ],
-  "title": "Eighteen Plus Credential",
+  "title": "Uber Rides Credential",
   "type": "object"
 }
