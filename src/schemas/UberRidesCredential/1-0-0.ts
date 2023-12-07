@@ -15,13 +15,13 @@ export default {
 
     credentialSubject: {
       type: "object",
-      required: ["id"],
+      required: ["id", "userId", "numberOfRides", "proofType", "proofValue"],
       properties: {
         id: { title: "Recipient DID", type: "string" },
         userId: { title: "ID", type: "string" },
         numberOfRides: { title: "Number of rides", type: "string" },
-        ProofType: { title: "Proof Type", type: "string"},
-        ProofValue: { title: "Proof Value", type: "string" },
+        proofType: { title: "Proof Type", type: "string"},
+        proofValue: { title: "Proof Value", type: "string" },
       },
     },
   },

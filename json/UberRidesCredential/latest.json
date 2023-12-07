@@ -34,14 +34,6 @@
     },
     "credentialSubject": {
       "properties": {
-        "ProofType": {
-          "title": "Proof Type",
-          "type": "string"
-        },
-        "ProofValue": {
-          "title": "Proof Value",
-          "type": "string"
-        },
         "id": {
           "title": "Recipient DID",
           "type": "string"
@@ -50,13 +42,25 @@
           "title": "Number of rides",
           "type": "string"
         },
+        "proofType": {
+          "title": "Proof Type",
+          "type": "string"
+        },
+        "proofValue": {
+          "title": "Proof Value",
+          "type": "string"
+        },
         "userId": {
           "title": "ID",
           "type": "string"
         }
       },
       "required": [
-        "id"
+        "id",
+        "userId",
+        "numberOfRides",
+        "proofType",
+        "proofValue"
       ],
       "type": "object"
     },
