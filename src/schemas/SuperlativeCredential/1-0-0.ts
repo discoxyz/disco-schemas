@@ -8,7 +8,8 @@ export default {
   $id: "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/SuperlativeCredential/1-0-0.json", // Update the URI to where your schema will be located
 
   title: "Superlative Credential",
-  description: "A credential attesting to the exchange of a superlative, including details such as the poll ID, sender, receiver, and the question involved.",
+  description:
+    "A credential attesting to the exchange of a superlative, including details such as the poll ID, sender, receiver, and the question involved.",
 
   properties: {
     ...BaseVerifiableCredential.properties,

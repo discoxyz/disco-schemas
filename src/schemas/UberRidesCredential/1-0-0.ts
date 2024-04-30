@@ -20,7 +20,7 @@ export default {
         id: { title: "Recipient DID", type: "string" },
         userId: { title: "ID", type: "string" },
         numberOfRides: { title: "Number of rides", type: "string" },
-        proofType: { title: "Proof Type", type: "string"},
+        proofType: { title: "Proof Type", type: "string" },
         proofValue: { title: "Proof Value", type: "string" },
       },
     },
